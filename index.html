@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2">
+    <title>SVG e Canvas</title>
+    <link rel="shortcut icon" href="images/logo/unicid-png.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/animation.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+
+        <section class="inicio" id="inicio">
+            <div class="inicioText">
+                <h1 class="text-white mt-5 mb-lg-4" data-aos="zoom-in" data-aos-delay="800">
+                    SVG e Canvas
+                </h1>
+
+                <p class="text-secondary-white-color" data-aos="fade-up" data-aos-delay="1000">
+                    as tags html que criam <strong class="custom-underline">SVG</strong> e <strong
+                        class="custom-underline">Canvas</strong>
+                </p>
+            </div>
+
+            <div class="videoWrapper">
+                <video autoplay="" loop="" muted="" class="custom-video"
+                    poster="videos/792bd98f3e617786c850493560e11c45.jpg">
+                    <source src="videos/814dc43e870597176cad645798825c03.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="overlay"></div>
+        </section>
+
+        <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-unicid" src="images/logo/unicid.jpg" width="40px">
+                    <strong>Unicid Tatuape</strong>
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#svg">SVG</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#canvas">Canvas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Diferenças</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#exemplo">Exemplos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="section-padding pb-0" id="svg">
+            <div class="container mb-5 pb-lg-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="mb-3" data-aos="fade-up">SVG (Scalable Vector Graphics)</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mt-3 mb-lg-5 text-menu">
+                        <p class="me-4" data-aos="fade-up" data-aos-delay="300"><a
+                                href="https://rockcontent.com/br/blog/svg/">SVG</a> é uma abreviação para "Scalable
+                            Vector Graphics" (Gráficos Vetoriais Escaláveis), que é um formato de <a
+                                href="https://www.treinaweb.com.br/blog/o-que-sao-imagens-vetoriais#:~:text=Imagens%20vetoriais%20possuem%20esse%20nome,imagens%20vetoriais%20não%20possuem%20pixels.">imagem
+                                vetorial</a>. O <a href="https://rockcontent.com/br/blog/svg/">SVG</a> utiliza fórmulas
+                            matemáticas para representar as formas e objetos
+                            que compõem a imagem, ao invés de pixels, como acontece em outros formatos de imagem.
+                            <br><br>
+                            A principal vantagem do <a href="https://rockcontent.com/br/blog/svg/">SVG</a> é que ele é
+                            escalável, ou seja, pode ser redimensionado sem
+                            perder a qualidade original da imagem. Além disso, as imagens em <a
+                                href="https://rockcontent.com/br/blog/svg/">SVG</a> são leves e podem ser
+                            carregadas rapidamente na web.
+                    </div>
+
+                    <div class="col-lg-6 col-12 mt-lg-3 mb-lg-5">
+                        <p class="me-4" data-aos="fade-up" data-aos-delay="500">O <a
+                                href="https://rockcontent.com/br/blog/svg/">SVG</a> é suportado pelos principais
+                            navegadores, como o Google Chrome, Mozilla Firefox, Microsoft Edge e Safari. Isso significa
+                            que as imagens em <a href="https://rockcontent.com/br/blog/svg/">SVG</a> podem ser exibidas
+                            em praticamente qualquer dispositivo, desde
+                            computadores a smartphones. <br><br><br> No entanto, é importante lembrar que algumas
+                            funcionalidades do <a href="https://rockcontent.com/br/blog/svg/">SVG</a> podem não ser
+                            suportadas por todos os navegadores. Por isso, é sempre
+                            importante testar e verificar a compatibilidade das imagens em <a
+                                href="https://rockcontent.com/br/blog/svg/">SVG</a> em diferentes navegadores
+                            e dispositivos antes de publicá-las na web.
+                    </div>
+
+                    <div class="col-lg-6 col-12 mt-lg-3 mb-lg-5">
+                        <p class="me-4" data-aos="fade-up" data-aos-delay="500">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-12 p-0">
+                        <img src="images/vector/svg.jpg" class="img-fluid canvas-image">
+                    </div>
+
+                    <div class="col-lg-3 col-12 bg-dark">
+                        <div
+                            class="d-flex flex-column flex-wrap justify-content-center h-100 py-5 px-4 pt-lg-4 pb-lg-0">
+                            <h3 class="text-white mb-3" data-aos="fade-up">SVG</h3>
+
+                            <p class="text-secondary-white-color" data-aos="fade-up">Figura para demonstração de codigo
+                                SVG</p>
+
+                            <div class="mt-3 custom-links button">
+
+                                <a data-bs-target="#carouselSvg" data-bs-slide-to="0" class="text-white custom-link"
+                                    data-aos="zoom-in" data-aos-delay="100">Imagem</a>
+
+                                <a data-bs-target="#carouselSvg" data-bs-slide-to="1" class="text-white custom-link"
+                                    data-aos="zoom-in" data-aos-delay="300">SVG</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 p-0">
+                        <section id="carouselSvg" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                            data-bs-interval="0">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active background">
+                                    <a href="images/figures/circleSvg.png" class="image-popup" data-aos="zoom-in"
+                                        data-aos-delay="1000">
+                                        <img src="images/figures/circleSvg.png" class="img-fluid vector-image">
+                                    </a>
+                                    <div class="vector-thumb bg-img-svg">
+                                        <h3 class="text-white mb-0 p-svg">Imagem</h3>
+
+                                        <p class="text-secondary-white-color mb-0">Fonte: <a class="source"
+                                                target="_blank"
+                                                href="https://www.w3schools.com/html/html5_svg.asp">www.w3schools.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <a href="images/code/codeSvg.png" class="image-popup" data-aos="zoom-in">
+                                        <img src="images/code/codeSvg.png" class="img-fluid vector-image">
+                                    </a>
+
+                                    <div class="vector-thumb bg-img-svg">
+                                        <h3 class="text-white mb-0">Codigo</h3>
+
+                                        <p class="text-secondary-white-color mb-0">Fonte: <a class="source"
+                                                target="_blank"
+                                                href="https://www.w3schools.com/html/html5_svg.asp">www.w3schools.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding pb-0" id="canvas">
+            <div class="container mb-5 pb-lg-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="mb-3" data-aos="fade-up">Canvas</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mt-3 mb-lg-5 text-menu">
+                        <p class="me-4" data-aos="fade-up" data-aos-delay="300"><a
+                                href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/canvas">Canvas</a> é um
+                            elemento <a href="https://www.homehost.com.br/blog/tutoriais/o-que-e-html/">HTML</a> que
+                            permite a
+                            criação de gráficos e animações dinâmicas usando <a
+                                href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript">JavaScript.</a>
+                            O <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/canvas">Canvas</a> é
+                            uma área de desenho
+                            em que se pode criar <a
+                                href="https://www.logogenio.pt/blogue/como-funcionam-os-graficos-vetoriais-e-por-que-utiliza-los">gráficos
+                                vetoriais</a> e imagens <a
+                                href="https://learn.microsoft.com/pt-br/dotnet/desktop/winforms/advanced/types-of-bitmaps?view=netframeworkdesktop-4.8">bitmap</a>
+                            de forma programática, usando
+                            métodos e propriedades <a
+                                href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript">JavaScript.</a>
+                            para desenhar formas, linhas, texto, imagens e muito mais.
+                            <br><br>
+                            O Canvas é suportado pelos principais navegadores da internet, como Google Chrome, Mozilla
+                            Firefox, Microsoft Edge e Safari. No entanto, pode haver diferenças de suporte para algumas
+                            funcionalidades em diferentes navegadores e versões. Por isso, é importante testar e
+                            verificar a compatibilidade do <a
+                                href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/canvas">Canvas</a> em
+                            diferentes navegadores e dispositivos antes de
+                            publicar seu projeto na web.
+                    </div>
+
+                    <div class="col-lg-6 col-12 mt-3 mb-lg-5 text-menu">
+                        <p class="me-4" data-aos="fade-up" data-aos-delay="300">Uma das vantagens do <a
+                                href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/canvas">Canvas</a> é a
+                            sua
+                            capacidade de criar gráficos animados de alta qualidade com uma boa performance. Por isso,
+                            ele é frequentemente utilizado para criar jogos, visualizações de dados e outros projetos
+                            interativos na web.
+                            <br><br><br><br>
+                            No entanto, o Canvas também apresenta algumas desvantagens, como a falta de suporte para
+                            recursos de acessibilidade, a dificuldade de trabalhar com texto e a necessidade de
+                            conhecimento em programação para a sua utilização. Por isso, é importante avaliar as suas
+                            necessidades e considerar outras opções, como o <a
+                                href="https://rockcontent.com/br/blog/svg/">SVG</a>, dependendo do seu projeto.
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-12 p-0">
+                        <img src="images/vector/canvas.png" class="img-fluid canvas-image">
+                    </div>
+
+                    <div class="col-lg-3 col-12 bg-dark">
+                        <div
+                            class="d-flex flex-column flex-wrap justify-content-center h-100 py-5 px-4 pt-lg-4 pb-lg-0">
+                            <h3 class="text-white mb-3" data-aos="fade-up">Canvas</h3>
+                            <p class="text-secondary-white-color" data-aos="fade-up">Figura para demonstração de codigo
+                                Canva</p>
+
+                            <div class="mt-3 custom-links button">
+
+                                <a data-bs-target="#carouselCanvas" data-bs-slide-to="0" class="text-white custom-link"
+                                    data-aos="zoom-in" data-aos-delay="100">Imagem</a>
+
+                                <a data-bs-target="#carouselCanvas" data-bs-slide-to="1" class="text-white custom-link"
+                                    data-aos="zoom-in" data-aos-delay="300">HTML</a>
+
+                                <a data-bs-target="#carouselCanvas" data-bs-slide-to="2" class="text-white custom-link"
+                                    data-aos="zoom-in" data-aos-delay="300">JS</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 p-0">
+                        <section id="carouselCanvas" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                            data-bs-interval="0">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active background">
+                                    <a href="images/figures/circleCanvas.png" class="image-popup" data-aos="zoom-in">
+                                        <img src="images/figures/circleCanvas.png" class="img-fluid vector-image" alt="">
+                                    </a>
+                                    <div class="vector-thumb bg-img-canva">
+                                        <h3 class="text-white mb-0">Imagem</h3>
+
+                                        <p class="text-secondary-white-color mb-0">Fonte: <a class="source"
+                                                target="_blank"
+                                                href="https://www.javascriptprogressivo.net/2019/01/Como-Desenhar-Arcos-Circulos-Tutorial-Canvas.html">www.javascriptprogressivo.net</a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <a href="images/code/codehtmlcanvas.png" class="image-popup">
+                                        <img src="images/code/codehtmlcanvas.png" class="img-fluid vector-image" alt="">
+                                    </a>
+
+                                    <div class="vector-thumb bg-img-canva">
+                                        <h3 class="text-white mb-0">Codigo HTML</h3>
+
+                                        <p class="text-secondary-white-color mb-0">Fonte: <a class="source"
+                                                target="_blank"
+                                                href="https://www.javascriptprogressivo.net/2019/01/Como-Desenhar-Arcos-Circulos-Tutorial-Canvas.html">www.javascriptprogressivo.net</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <a href="images/code/codejscanvas.png" class="image-popup">
+                                        <img src="images/code/codejscanvas.png" class="img-fluid vector-image" alt="">
+                                    </a>
+
+                                    <div class="vector-thumb bg-img-canva">
+                                        <h3 class="text-white mb-0">Codigo JavaScript</h3>
+
+                                        <p class="text-secondary-white-color mb-0">Fonte: <a class="source"
+                                                target="_blank"
+                                                href="https://www.javascriptprogressivo.net/2019/01/Como-Desenhar-Arcos-Circulos-Tutorial-Canvas.html">www.javascriptprogressivo.net</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" id="portfolio">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12">
+                        <h2 class="mb-5 text-center" data-aos="fade-up">Diferenças</h2>
+                    </div>
+
+
+                    <table class="card">
+                        <tr class="card-body sticky">
+                            <th>
+                                <h5 class="card-title card-title-svg">SVG</h5>
+                            </th>
+                            <th>
+                                <h5 class="card-title card-title-canvas">CANVAS</h5>
+                            </th>
+                            <th>
+                                <h5 class="card-title card-title-png">PNG</h5>
+                            </th>
+                        </tr>
+                        <tr class="card-body" data-aos="fade-up">
+                            <th><img class="card-img-top card-svg" src="images/portfolio/svg.png"></th>
+                            <th><img class="card-img-top card-canvas" src="images/portfolio/np4mse8xxr1ta3jhdpdu.png"
+                                    class="card-img-top"></th>
+                            <th><img class="card-img-top card-png" src="images/portfolio/np4mse8xxr1ta3jhdpdu.png"
+                                    class="card-img-top"></th>
+                        </tr>
+                        <tr class="card-body" data-aos="fade-up">
+                            <td>
+                                <p class="card-text card-svg">Imagem Vetorial</p>
+                            </td>
+                            <td>
+                                <p class="card-text card-canvas">Vetorial ou Rasterizada</p>
+                            </td>
+                            <td>
+                                <p class="card-text card-png">Imagem Vetorial</p>
+                            </td>
+                        </tr>
+                        <tr class="card-body" data-aos="fade-up">
+                            <td>
+                                <p class="card-text card-svg">Escalabilidade Total, sem perda de qualidade</p>
+                            </td>
+                            <td>
+                                <p class="card-text card-canvas">Limitada pela resolução do dispositivo </p>
+                            </td>
+                            <td>
+                                <p class="card-text card-png">Escalabilidade Total, sem perda de qualidade</p>
+                            </td>
+                        </tr>
+                        <tr class="card-body" data-aos="fade-up">
+                            <td>
+                                <p class="card-text card-svg">Pouca ou nenhuma Interatividade</p>
+                            </td>
+                            <td>
+                                <p class="card-text card-canvas">Total, através de scripts JavaScript</p>
+                            </td>
+                            <td>
+                                <p class="card-text card-png">Total, através de scripts JavaScript</p>
+                            </td>
+                        </tr>
+                        <tr class="card-body" data-aos="fade-up">
+
+                            <td>
+                                <p class="card-text card-svg">Sim</p>
+                            </td>
+                            <td>
+                                <p class="card-text card-canvas">Total, através de scripts JavaScript</p>
+                            </td>
+                            <td>
+                                <p class="card-text card-png">Pouca ou nenhuma Interatividade</p>
+                            </td>
+
+                        </tr>
+                        <tr class="card-body" data-aos="fade-up">
+
+                            <td>
+                                <p class="card-text card-svg">Muito bom, pode ser lido em formato de texto</p>
+                            </td>
+                            <td>
+                                <p class="card-text card-canvas">Bom, mas pode ser mais difícil para dispositivos de
+                                    leitura de tela</p>
+                            </td>
+                            <td>
+                                <p class="card-text card-png">Sim</p>
+                            </td>
+
+                        </tr>
+                        <tr class="card-body" data-aos="fade-up">
+                            <td>
+                                <p class="card-text card-svg">Suportado em todos os navegadores modernos </p>
+                            </td>
+                            <td>
+                                <p class="card-text card-canvas">Suportado em todos os navegadores modernos </p>
+                            </td>
+                            <td>
+                                <p class="card-text card-png">Suportado em todos os navegadores modernos </p>
+                            </td>
+                        </tr>
+                        <tr class="card-body" data-aos="fade-up">
+                            <td>
+                                <p class="card-text card-svg">Pequeno, por ser baseado em XML</p>
+                            </td>
+                            <td>
+                                <p class="card-text card-canvas">Variável, dependendo da complexidade da imagem</p>
+                            </td>
+                            <td>
+                                <p class="card-text card-png">Pequeno, por ser baseado em XML</p>
+                            </td>
+                        </tr>
+                        <tr class="card-body" data-aos="fade-up">
+                            <td>
+                                <p class="card-text-last card-svg">Ícones, logotipos e gráficos estáticos </p>
+                            </td>
+                            <td>
+                                <p class="card-text-last card-canvas">Gráficos dinâmicos e interativos</p>
+                            </td>
+                            <td>
+                                <p class="card-text-last card-png">Ícones, logotipos e gráficos estáticos </p>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="examples section-padding" id="exemplo">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12">
+                        <h2 class="mb-5 text-center" data-aos="fade-up">Exemplos</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+
+                        <div class="examples-thumb examples-image-hover examples-image-hover-mario ">
+
+                            <div class="flip" id="cardMario">
+                                <div class="face" id="frontMario">
+                                    <svg class="svg first" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 592.22 993.57">
+                                        <g id="Layer_2" data-name="Layer 2">
+                                            <g id="drawing">
+                                                <g id="Mario">
+                                                    <g id="shoe2">
+                                                        <path id="shoesole2" class="first-1"
+                                                            d="M407.66,942.72l.24-11.39,160.18,35.45.21,7.14a31.68,31.68,0,0,1-8.4,8.74c-4.35,3-8.46,4.07-14.4,5.48A160.09,160.09,0,0,1,522,992.43a232.26,232.26,0,0,1-31,1c-17.67-.53-27.15-2.6-30-3.26-9.38-2.16-13.67-4.31-17-6.51a39.16,39.16,0,0,1-11.83-12.35,37.23,37.23,0,0,1-4.35-11.41l-4.71-5.7a35.41,35.41,0,0,1-3.79-1.57,42.47,42.47,0,0,1-4.29-2.4,21.34,21.34,0,0,1-4.46-3.26A15.23,15.23,0,0,1,407.66,942.72Z" />
+                                                        <path id="shoemain2" class="first-2"
+                                                            d="M413.66,936.07a44.07,44.07,0,0,1-10-9.55c-8.49-11.16-9.1-23.22-9.26-27.52A52.31,52.31,0,0,1,396,884.09a144.38,144.38,0,0,1,37.72-30.86c15.71-8.86,27.94-15.75,42.68-13.37,12.54,2,12.48,8.43,31.37,14.4,16.68,5.27,19.37,1.11,32.4,6.68a68.56,68.56,0,0,1,27.26,21.86c7.9,10.69,10.49,20.78,12.34,28,.55,2.13,3.92,15.69,2.32,29.83a48.5,48.5,0,0,1-3.6,13.88,26.26,26.26,0,0,1-4,7.07c-1.61,1.93-4,4.1-9.84,7.08a77,77,0,0,1-13.88,5.4,170.36,170.36,0,0,1-24.17,5.4,200.4,200.4,0,0,1-32.15,1.8c-11.29-.06-17.36-.1-26-1.55-9.32-1.56-18.28-3.16-28-9.25a64,64,0,0,1-14.4-12.6A66.39,66.39,0,0,1,413.66,936.07Z" />
+                                                    </g>
+                                                    <g id="shoe1">
+                                                        <g id="shoesole1">
+                                                            <polygon id="shoesoleshadow1" class="first-3"
+                                                                points="311.7 932.69 304.5 927.31 312.1 922.43 311.7 932.69" />
+                                                            <path id="shoesolemain1" class="first-1"
+                                                                d="M178.12,930.37a37.24,37.24,0,0,0,7.2,5.66c2.13,1.29,6.29,3.5,14.4,5.14,4,.82,8.29,1.35,17.48,1.55,8.61.18,16.72,0,25.2-.52A217.87,217.87,0,0,0,265,940.14c7.6-1.17,15.06-2.32,24.17-5.65a97.88,97.88,0,0,0,22.9-12.06l-.4,10.26c6.95-.07,12.92-.35,17.62-.65,5-.31,2.89-.3,12.34-1,0,0,4.89-.38,16.07-2.19a15.69,15.69,0,0,0,5.4-1.93,9.74,9.74,0,0,0,3.22-2.83,8.74,8.74,0,0,0,1-1.93v-9l-189.25,9.49Z" />
+                                                        </g>
+                                                        <path id="shoemain1" class="first-2"
+                                                            d="M376.12,867.12,226,828a88.13,88.13,0,0,0-9.26,0,58.56,58.56,0,0,0-14.4,2.06c-5.53,1.66-9.11,4-13.89,7.2s-9.47,6.27-13.88,11.83A48,48,0,0,0,167,863a61.67,61.67,0,0,0-3.77,22.12c0,5.82-.07,13.35,3.6,22.11,1.64,3.92,4.51,10.55,11.32,15.43a33.9,33.9,0,0,0,6.68,3.6c5,2.21,10.32,3.6,19.55,4.63a172.14,172.14,0,0,0,19,1c8.14,0,17.2,0,29.83-1,5.54-.47,17.14-2.21,40.12-5.66,19.64-3,21.26-3.25,26.23-3.6,8-.56,12.78-.39,24.17-1.54,8.76-.89,14.42-1.85,20.57-5.15a27.46,27.46,0,0,0,8.74-6.68c3.74-4.43,4.76-8.84,6.17-14.92,1.54-6.62,2.94-12.65.52-19.54A25.18,25.18,0,0,0,376.12,867.12Z" />
+                                                    </g>
+                                                    <path id="tshirt" class="first-4"
+                                                        d="M447.09,396.89a320,320,0,0,1,41.83,24.34c4.8,3.31,25.18,17.54,42.51,36.69a94.39,94.39,0,0,1,13.37,18.51,68.84,68.84,0,0,1,7.2,17.83,64.39,64.39,0,0,1,1.72,18.86,53.74,53.74,0,0,1-5.83,22.63c-3.72,7-8.17,11.23-14.06,16.8-5.29,5-9.68,8.07-15.77,12.34-7.14,5-14.26,9.28-19.93,12.68-2.35,1.42-4.32,2.57-5.68,3.36l-5.59,10.7L408,520l-183.08-128a20,20,0,0,0,1-8.23c-.26-2.77-1.06-4.54-3.6-9.77-3.71-7.63-5.56-11.45-7.2-14.4-1.5-2.69-1.6-2.71-5.66-9.77-2.32-4-4-7-4.12-7.2-2.94-5.18-25.52-39.7-79.71-121.38a18.4,18.4,0,0,1,.51-5.27,20.88,20.88,0,0,1,2.7-6,92,92,0,0,1,6.11-9c5-6.25,7.51-9.37,10.74-12.43,5.91-5.6,11.17-8.68,18-12.68a78.72,78.72,0,0,1,13.88-6.86,70.19,70.19,0,0,1,12-3.09c6.57-1.3,9.06-1.16,11.32,0a13.93,13.93,0,0,1,3.77,3.09,20.77,20.77,0,0,1,4.11,6.51c1.42,3.5,11,18.06,38.23,56.06C289.54,290.12,348,348.56,427.89,388Q437.52,392.73,447.09,396.89Z" />
+                                                    <path id="trousers" class="first-5"
+                                                        d="M374.19,843.72a18.27,18.27,0,0,1,5.7,8.48,16.81,16.81,0,0,1,.68,6.86,17.24,17.24,0,0,1-2.74,7.2c-.71,1-3.42,4.7-13,7.54a60.67,60.67,0,0,1-22.28,2.06c-4.82-.38-8.77-1.29-16.46-3.09-4.85-1.13-12-2.83-21.26-5.83a249.12,249.12,0,0,1-30.51-12.34c-3.83-1.84-7.12-3.52-32.57-17.83-7.74-4.35-14.21-8-18.86-10.63a7.45,7.45,0,0,1-.26-2.61,6.8,6.8,0,0,1,.58-2.31,8,8,0,0,1,2.32-2.74c.48-.42.55-.42,2.12-1.6l1.8-1.39-40.6-186.72c-.24-.39-.6-1-1-1.69a131.08,131.08,0,0,1-8.14-16.25,245.06,245.06,0,0,1-9.26-24c-2.66-8.35-6.77-21.2-8.23-37.71a146.5,146.5,0,0,1,2.75-42.86,180.23,180.23,0,0,1,20.91-54.51,192.52,192.52,0,0,1,58.63-62.4l1.16-.65c1.09,1.39,2.54,3.15,4.33,5.1,1.39,1.54,3.34,3.57,6.17,6.17a98.71,98.71,0,0,0,11.65,9.6c6.6,4.46,12.29,6.32,20.23,8.92A116.37,116.37,0,0,0,306.52,423a151,151,0,0,0,16.11,1.37c5.93.3,10.88.35,14.4.34l38.74,25c.75,2.6,1.77,6,3.09,9.94.9,2.69,3.08,9.08,6.86,18.17,4.22,10.16,6.33,15.24,9.94,21.6a126.07,126.07,0,0,0,12,17.49l40.1,114.32,82.28,203,.45.79a23.06,23.06,0,0,0,6.34,9.26c3.52,3,5.4,4.37,5.4,4.37a22.87,22.87,0,0,1,3.34,2.83,8.81,8.81,0,0,1,2.58,3.86c.32,1.24.12,2.29-.26,4.37a25.9,25.9,0,0,1-1,3.86l-.39.42a53.69,53.69,0,0,0-11.7-4.8,58.55,58.55,0,0,0-10.41-1.8,109.27,109.27,0,0,0-21.47.13c-1.91.16-6.9.61-13.54,1.67a222.23,222.23,0,0,0-29.92,7.2c-2.08.65-7.5,2.58-18.34,6.43,0,0-3.72,1.33-21.77,8.57a32.55,32.55,0,0,0-4,1.89c-2.33,1.31-2.23,1.67-3.6,2.23s-3.11.6-6.34.6a23.16,23.16,0,0,1-4.46-.26,12.6,12.6,0,0,1-4.72-1.54A11.34,11.34,0,0,1,391.8,879a13.43,13.43,0,0,1-1.11-5.23A14.67,14.67,0,0,1,391,871a16.87,16.87,0,0,1,.94-3.34l.34-1.11a12.32,12.32,0,0,0,.34-2,12.48,12.48,0,0,0,0-2.22,14.38,14.38,0,0,0-.34-2.23c-2.63-11.31-1.87-12.22-6.17-26.75-7.8-26.37-19.89-57.25-19.89-57.25-7-18-11.68-28.19-13.71-32.57-3.94-8.5-7.52-15.6-10.29-20.92,4.18,20.89,9.25,42.89,15.43,65.83,5.1,18.9,10.52,36.85,16.12,53.83Z" />
+                                                    <path id="hairneck1" class="first-6"
+                                                        d="M462.09,381.13a10.47,10.47,0,0,1,.43,4.62,8.09,8.09,0,0,1-2.06,4.8c-1,1-2.24,1.38-4.63,2.05a23.11,23.11,0,0,1-7.54.86,25.68,25.68,0,0,1-3-.35,67.57,67.57,0,0,1-11.44-2.74A64.16,64.16,0,0,1,425,386.6c2.46-.69,4.59-1.35,6.34-1.9,2.78-.89,4.83-1.61,5.45-1.83,1.88-.67,3.31-1.17,5.24-2s3.62-1.57,4.51-2c2.51-1.2,4.35-2.22,5-2.57,1-.57,1.85-1.08,2.48-1.46l3.21,2.87Z" />
+                                                    <path id="hairneck2" class="first-6"
+                                                        d="M497,352.68c.83,3.29,1.41,5.64,1.67,6.67,1.15,4.6,1.69,6.93,1.54,8.74a14.4,14.4,0,0,1-2.57,6.86c-1.66,2.46-3.57,3.8-6,5.48a22.26,22.26,0,0,1-5.14,2.92c-2.45.91-4.75,1-9.26,1s-6.94.1-9.6-.68a24.93,24.93,0,0,1-6.17-2.92,38.61,38.61,0,0,1-7.52-5.88c1-.63,2.43-1.53,4-2.71a62.69,62.69,0,0,0,7.1-6.14,89.82,89.82,0,0,0,6.95-7.64,61.36,61.36,0,0,0,4.52-5.91c.89-1.38,2-2.61,2.79-4a4.8,4.8,0,0,1,1.54-1.93,4.58,4.58,0,0,1,3-.56,6.11,6.11,0,0,1,2.31.86,28,28,0,0,1,3.1,2.22A20.26,20.26,0,0,0,492,350.6,35.69,35.69,0,0,0,497,352.68Z" />
+                                                    <g id="suspender1">
+                                                        <path id="suspenderblue1" class="first-5"
+                                                            d="M278.92,357.46a88.62,88.62,0,0,0-20.06,8.23c-8,4.49-13.29,9.11-19.29,14.4a199,199,0,0,0-18.51,18.77,346,346,0,0,0-28.54,37.54l2.31,14.4,22.63-10.54a150.89,150.89,0,0,1,40.89-51.43,148.06,148.06,0,0,1,28-17.74Z" />
+                                                        <path id="button1" class="first-7"
+                                                            d="M222.91,402.9a23.61,23.61,0,0,0-7,1,22.87,22.87,0,0,0-7,3c-2.48,1.64-3.84,3.33-6,6-2.46,3-4,4.92-5,8a21.11,21.11,0,0,0-1,7,14.48,14.48,0,0,0,1,6,12.41,12.41,0,0,0,4,5,9.21,9.21,0,0,0,3,0,10.94,10.94,0,0,0,3-1c5.1-2.61,12-11,12-11s9.33-11.35,10-16a15.63,15.63,0,0,0,0-4h0a11.55,11.55,0,0,0-1-3A21.81,21.81,0,0,0,222.91,402.9Z" />
+                                                    </g>
+                                                    <g id="supender2">
+                                                        <path id="suspenderblue2" class="first-5"
+                                                            d="M359.66,495.63a348.89,348.89,0,0,1,14.57-35.83c7-14.86,13-27.2,24.17-40.28,4.13-4.83,9.9-9.51,21.43-18.86a26.81,26.81,0,0,1,10.8-5.66,21.14,21.14,0,0,1,8.57-.34,19.61,19.61,0,0,1,6.17,2.23l1.55-.34a4.87,4.87,0,0,0-.69-2.4,5.52,5.52,0,0,0-1.54-1.55c-1.53-1-7.28-3.25-15.26-5.83l-2-.37c-2.22.46-5.71,1.17-10,2-5.31,1-8.38,1.59-16,3-9.23,1.71-13.84,2.57-16,3-4.22.85-10.41,2.16-18,4h-3a131.51,131.51,0,0,0-17,13c-2.53,2.29-9.34,8.62-21,24a354.67,354.67,0,0,0-21,31l18.42,29.23Z" />
+                                                        <circle id="button2" class="first-7" cx="340.91" cy="461.9"
+                                                            r="23" />
+                                                    </g>
+                                                    <g id="globe2">
+                                                        <path id="globemain2" class="first-8"
+                                                            d="M445.27,649l.15-.51a53.93,53.93,0,0,0,8.1-6.09,53.33,53.33,0,0,0,10.15-12.47,60.52,60.52,0,0,0,5.79-14.14,92.32,92.32,0,0,0,3.09-13.63l-64.93-78.56A76,76,0,0,0,390,530.26c-9.94,5.27-16.23,11.47-22.11,17.23a100.91,100.91,0,0,0-13.37,15.43c-3.74,5.37-8.31,12.07-11,21.94a59.09,59.09,0,0,0-2,14.06c-.22,5.88-.33,10.05,2.06,14.4a18.76,18.76,0,0,0,4.93,5.72,26.91,26.91,0,0,0,1.2,8.81,26,26,0,0,0,4.76,8.87,20.29,20.29,0,0,0,5.65,4.88,19.35,19.35,0,0,0,5.55,2.13c.24.65.62,1.56,1.14,2.63a46.46,46.46,0,0,0,4.37,6.81,33.21,33.21,0,0,0,4.37,5.15,29.63,29.63,0,0,0,6.82,4.63,40.67,40.67,0,0,0,6.3,2.57,42,42,0,0,0,8.61,1.74,26.78,26.78,0,0,0,10.93,6.49,27.57,27.57,0,0,0,11.19.77,36.89,36.89,0,0,0,12.34-3.47c3.35-1.54,6-2.76,8.61-5.53a18.68,18.68,0,0,0,4.76-8.49A18.1,18.1,0,0,0,445.27,649Z" />
+                                                        <path id="globeborder2" class="first-8"
+                                                            d="M492.52,581.52a15.83,15.83,0,0,1-4.8,1.37,17.58,17.58,0,0,1-8.57-1.37,45.71,45.71,0,0,1-11.83-6.69,110.16,110.16,0,0,1-15.6-14.57,100.55,100.55,0,0,1-11.66-15.43c-3.88-6.39-7.33-12.2-8.74-20.57a45.26,45.26,0,0,1-.35-12.51l5.15-3.78a18.9,18.9,0,0,0-3.26-1.88,19.55,19.55,0,0,0-8.4-1.54c-2.32.07-6.13.19-9.6,2.74a15.4,15.4,0,0,0-4.63,6,29.71,29.71,0,0,0-3.08,13.37c-.1,9.54,3.26,16.92,6.34,23.49a98.55,98.55,0,0,0,13.37,20.91,106.11,106.11,0,0,0,19.37,18.86,73,73,0,0,0,14.06,8.23A48.57,48.57,0,0,0,473,601.92c4.85.69,7.92,1.13,11.32-.52a15.32,15.32,0,0,0,7-7.88,21.68,21.68,0,0,0,1.37-7.55A28.7,28.7,0,0,0,492.52,581.52Z" />
+                                                    </g>
+                                                    <g id="globe1">
+                                                        <path id="globemain1" class="first-8"
+                                                            d="M153.29,77a59.09,59.09,0,0,0-5.48,3.08c-.61.38-1.65,1.06-6.69,4.8-3.19,2.36-3.84,2.88-6,4.45-1.91,1.38-3.47,2.48-4.46,3.17a41,41,0,0,0-7,1.63c-.92.3-1.6.56-2.83.87a24.54,24.54,0,0,1-5.15.79,18.16,18.16,0,0,1-6-.86c-8.84-2.62-17.9-4.42-26.85-6.66-6.07-1.51-9.53-2.15-16.45-3.43-5.94-1.1-11.2-1.92-17.15-.7-2.5.52-5,1.06-7.37,2.91a56.67,56.67,0,0,0-4.8,4.46c-.93.93-1.69,1.71-2.19,2.25-1,0-2.62,0-4.59,0-4.88-.06-5.81-.24-7.77.19a23.37,23.37,0,0,0-4.63,1.61,20.9,20.9,0,0,0-3.8,2A13.28,13.28,0,0,0,10,101.42a12.37,12.37,0,0,0-1.54,3.47,12.88,12.88,0,0,0-.33,5.23,14,14,0,0,0-2.31,1.2,12,12,0,0,0-3.61,3.34,12,12,0,0,0-1.63,3.6A15.68,15.68,0,0,0,0,123.4a17.7,17.7,0,0,0,1.37,6.52,12.66,12.66,0,0,0,.56,1.15A14.43,14.43,0,0,0,2.23,133a16.23,16.23,0,0,0,1.29,3.6,36,36,0,0,0,3.08,4.89c1.82,2.68,1.67,2.57,2.4,3.6a52.27,52.27,0,0,0,5.57,6.52c3.79,3.93,6.9,6.71,10.53,9.95,3.18,2.83,4.81,4.27,6.94,5.92a89.7,89.7,0,0,0,7.71,5.31A83.92,83.92,0,0,0,45.92,179C53.18,185.51,60,189.37,68,193.38a358.83,358.83,0,0,0,34.19,14.94l93.89-66.81c.31-2.22.71-5.4,1-9.26a100.56,100.56,0,0,0,.52-16.45,51.15,51.15,0,0,0-1.28-10.29c-.81-3.23-1.68-5-1.54-8.23a20.7,20.7,0,0,1,1.29-5.91,37.24,37.24,0,0,1,3.61-7.46c3.07-5.22,3.76-5.49,6.43-10,2.23-3.78,3.36-5.73,4.12-8.74a14.45,14.45,0,0,0,.26-8.23,13.32,13.32,0,0,0-3.34-5.4,17.6,17.6,0,0,0-6.17-4.12,27.55,27.55,0,0,0-12.34-2.06,30.25,30.25,0,0,0-13.89,4.36c-3.79,2.31-6,4.81-9,8.22-3.27,3.71-6.42,7.29-8,11.31a26.23,26.23,0,0,1-3.6,6.62C153.85,76.36,153.51,76.77,153.29,77Z" />
+                                                        <path id="globeborder1" class="first-8"
+                                                            d="M125.87,221.19a18.38,18.38,0,0,1,.26-7.2c.59-2.41,1.64-4.46,5.41-9.52a97.4,97.4,0,0,1,7.2-9,93.23,93.23,0,0,1,22.38-18.25c3.45-2,7.7-3.81,16.21-7.44a46.79,46.79,0,0,1,10.8-3.6c6.22-1.14,10.12-.3,12.08.27a20.24,20.24,0,0,1,2.83,1l4.37,5.66a25,25,0,0,0,4.63-8.74,17.59,17.59,0,0,0,.78-9,16.37,16.37,0,0,0-3.34-6.95,20.3,20.3,0,0,0-8.22-6.17c-3.3-1.47-7-2.24-13.37-2.07a74.73,74.73,0,0,0-20.83,3.59c-12.29,3.95-20.74,9.51-27.27,13.87a130.26,130.26,0,0,0-18.26,14.65c-11.34,11-15.33,19.13-16.47,21.59a36.64,36.64,0,0,0-3.35,10.54c-.69,4.67-1.61,10.95,2.05,16.2,3.88,5.57,10.67,6.76,14.65,7.46a30.8,30.8,0,0,0,11.83-.25Z" />
+                                                    </g>
+                                                    <path id="rightear" class="first-9"
+                                                        d="M248.23,249.46a118.9,118.9,0,0,1-.68-15.77,127.27,127.27,0,0,1,2.4-21.26A95.7,95.7,0,0,1,253,200.09c3.61-11.06,7.57-15.9,8.59-17.1a24,24,0,0,1,6.75-5.79,22,22,0,0,1,7.46-2.48l15.26,41.14Z" />
+                                                    <path id="faceskin" class="first-9"
+                                                        d="M399.58,120.54,293.06,130.92l-7.46,28.54c-.37,1.69-1,4.6-1.8,8.23-5.44,25.38-8.16,38.07-8.48,40.11A82.61,82.61,0,0,1,272,220.15a22.9,22.9,0,0,1-3.85,7.45,21.24,21.24,0,0,1-4.12,3.86c-7.25,5.45-12.65,13.9-15.43,18.26a52.58,52.58,0,0,0-5.4,10c-2.91,7.53-3,13.9-3.08,18.77a78.84,78.84,0,0,0,4.11,25.2,83,83,0,0,0,9.77,21.6c1.56,2.4,4.13,5.63,9.26,12.08,9.48,11.93,9,10.45,12.34,15.17,3.76,5.33,3.52,6,12.6,20.58,2.6,4.16,3.91,6.26,4.63,7.2a53.4,53.4,0,0,0,17.49,14.4,61.88,61.88,0,0,0,24.94,7.45c5.79.4,10.17-.19,18.26-1.28,7.1-1,12.82-2.27,17.48-3.35,8.2-1.89,9.65-2.65,16.2-4.11a156.05,156.05,0,0,1,17.23-2.83,139.56,139.56,0,0,0,30.6-7.2s15-4.32,25.72-13.37a92.21,92.21,0,0,0,9.64-9.64c1.76-2.09,3.11-3.69,4.76-6.05,1.39-2,3.2-3.72,4.24-5.91a4,4,0,0,1,1.54-1.93,7.36,7.36,0,0,1,3-.56,2.91,2.91,0,0,1,1.33.13,2.56,2.56,0,0,1,1,.73c.91,1.07,4.36,3,5.83,3.77A37.58,37.58,0,0,0,502.63,354a42.33,42.33,0,0,0,16.12-.68c10-2.31,16.56-7.41,21.94-11.66,5.11-4,16-12.82,23-28.46a64.84,64.84,0,0,0,5.83-25.71,37.17,37.17,0,0,0-1.37-11.32c-.88-2.85-3.42-11.17-11.32-16.11-5.58-3.49-11.19-3.64-16.45-3.77A45.63,45.63,0,0,0,528,257.69l-18.68-56.06Z" />
+                                                    <path id="eyebrow2" class="first-10"
+                                                        d="M392.32,183.89c1.37-.53,3.31-1.25,5.65-2.06a92.6,92.6,0,0,1,9-2.83c4.84-1.1,8.68-1.07,13.63-1a41,41,0,0,1,8,.52,30.93,30.93,0,0,1,10.55,4.11,31.77,31.77,0,0,1,7.71,7.2,55,55,0,0,1,8.74,14.66,18.17,18.17,0,0,0,1.29-4.37,28.76,28.76,0,0,0,0-6.94c-.22-4,.06-5.63,0-7.46-.22-6.67-5.05-12.57-7.2-15.17-1.8-2.18-12.26-14.36-25.2-13.12a29.23,29.23,0,0,0-7.84,2.06,32.43,32.43,0,0,0-9.65,6.43A83.84,83.84,0,0,0,392.32,183.89Z" />
+                                                    <path id="pin2" class="first-6"
+                                                        d="M528,257.69a39,39,0,0,0-4.54,4.37,45.53,45.53,0,0,0-5.66,8.23c-4.35,7.46-3.95,5.75-8.23,13.11-3.82,6.58-6.62,12.21-7.2,13.37-1.92,3.89-4.44,7.5-5.91,11.58a14.23,14.23,0,0,1-3.6,5.91,9.93,9.93,0,0,1-3.86,2.31,6.15,6.15,0,0,1-4.11.26c-1.85-.67-2.73-2.39-3.34-3.6a13.21,13.21,0,0,1-1.29-4.88,60.56,60.56,0,0,1-.77-9.78,42.86,42.86,0,0,1,1.28-9,13.16,13.16,0,0,1-4.62-2.05A16.36,16.36,0,0,1,470,277c-.3-2.9.52-5,1.55-7.71a23.68,23.68,0,0,1,5.4-8.74c2.19-2.2,2.77-1.8,5.14-4.12a28.19,28.19,0,0,0,5.14-7.2c2.09-3.74,3.08-6.61,4.89-11.83.9-2.6.23-.92,3.08-10.28,1.05-3.42,1.48-4.77,1.55-6.94.08-2.82-.54-4,.08-4.46,1.5-1,7.1,4.76,9.74,7.48a112.16,112.16,0,0,1,8.26,9.66,87.85,87.85,0,0,1,5.51,7.5,63.59,63.59,0,0,1,5.78,11.33A56.88,56.88,0,0,1,528,257.69Z" />
+                                                    <path id="pin1" class="first-6"
+                                                        d="M285.35,160.75c-.42,1.84-1.05,4.68-1.81,8.16-1.46,6.72-1.51,7.19-2.51,11.73-1.53,6.88-2.29,10.32-3,13.21a57.1,57.1,0,0,0-1.63,7c-.49,3.18-.28,4-.78,7.2a50.23,50.23,0,0,1-1.8,7.46c-1.24,4.14-2,6.53-3.85,9.25a21.45,21.45,0,0,1-2.32,2.83,3.46,3.46,0,0,1-2.83-.51c-1-.91-.88-2.57-.77-3.6A41.63,41.63,0,0,1,266.32,213c.62-1.48,1.87-5.79,4.37-14.4,1.44-5,2.56-8.83,3.6-14.15,1-5.13,2.11-12.5,2.31-13.88.11-.71.19-1.29.25-1.69.28-.33.72-.87,1.23-1.56s.88-1.22,2-2.73a11,11,0,0,1,1.31-1.64,8.81,8.81,0,0,1,1.45-1.12A8.69,8.69,0,0,1,285.35,160.75Z" />
+                                                    <path id="hat" class="first-4"
+                                                        d="M276.56,169.19l-3.94-7.8a75.21,75.21,0,0,1-8.1-5A53,53,0,0,1,256.8,150a40,40,0,0,1-5.83-7.2,33.21,33.21,0,0,1-4.45-10.28c-.64-2.75-1.87-8.05,0-13.72,1.92-5.83,6.1-9,12-13.37a55.36,55.36,0,0,1,15.08-7.89c2.43-.85,4.53-1.42,6.09-1.8,1.95-4.42,4.69-10.3,8.31-17a204.9,204.9,0,0,1,15.43-25c5.22-7.17,12.25-16.82,24-26.74A111.08,111.08,0,0,1,353.83,9.8,114.12,114.12,0,0,1,397.72,0a116.84,116.84,0,0,1,30.85,3.43A128.65,128.65,0,0,1,454.8,13.4a170.7,170.7,0,0,1,26.75,16c27.59,20.25,42,45.63,50.91,61.2A276.49,276.49,0,0,1,546.86,120a297.55,297.55,0,0,1,11.66,32.4c3,10.36,5,19.43,6.34,26.57a90.5,90.5,0,0,1,11.31,10.29,59.72,59.72,0,0,1,8.92,11.48,52.26,52.26,0,0,1,5.83,15.78,59.06,59.06,0,0,1,.34,23,65.39,65.39,0,0,1-4.46,14A78.38,78.38,0,0,1,581,264.89a72.93,72.93,0,0,1-12.09,14.56,32.15,32.15,0,0,0-1.42-5.26,27.7,27.7,0,0,0-5-9.05,25,25,0,0,0-8.7-6.62c-3.77-1.69-6.9-1.9-10.87-2.12A53.93,53.93,0,0,0,528,257.69a59.46,59.46,0,0,0-3.08-8.92c-2.84-6.48-6.07-10.67-10.12-15.94-3.71-4.82-6.6-8.53-11.48-12.51a69,69,0,0,0-6.52-4.63c-6.81-4.46-10.62-6-14.91-8.4-5.3-3-8.62-6-15.26-12-5.61-5.06-9.47-9.38-17-17.83-3.89-4.38-9.11-10.39-15.17-17.74a13.54,13.54,0,0,0-3.6-1.8,15.62,15.62,0,0,0-6.43-.52,23.17,23.17,0,0,0-5.14,1c-1.27-1.06-3.1-2.52-5.4-4.11a81.76,81.76,0,0,0-8.75-5.15c-3.09-1.64-6.84-3.61-12.08-5.91a159.45,159.45,0,0,0-17.23-6.43A111.27,111.27,0,0,0,359.92,133,113.08,113.08,0,0,0,344,131.69c-2,0-5.51,0-9.25.26-8.14.58-20.84,1.49-33.17,9-7.71,4.68-11,9.35-11.83,10.54a32.51,32.51,0,0,0-4.37,9.26,8.67,8.67,0,0,0-3.6,1.8c-1,.86-1.41,1.63-2.83,3.6C277.94,167.49,277.1,168.54,276.56,169.19Z" />
+                                                    <path id="eyebrow1" class="first-10"
+                                                        d="M295.55,158.77l3.25-2.22c4.41-3,4.53-3.16,5.32-3.6a23.08,23.08,0,0,1,7.2-2.58,18.38,18.38,0,0,1,6.68-.17,18.65,18.65,0,0,1,6.86,2.92,30,30,0,0,1,8.4,7.2c1.88,2.37,2.46,3.93,5.31,7,1,1.13,2,2,2.58,2.57a114.69,114.69,0,0,0,.51-12.69c-.13-9.22-.26-13.93-2.91-19-1.14-2.18-3.74-7.15-9.6-9.77a19,19,0,0,0-13.2-.68c-6,1.89-9.14,6.34-12.69,11.31A43.71,43.71,0,0,0,298,149.17,44.45,44.45,0,0,0,295.55,158.77Z" />
+                                                    <g id="eye2">
+                                                        <path id="eyemain2" class="first-11"
+                                                            d="M389,202.83c3.07-3.54,4.67-5.39,7.46-7a22,22,0,0,1,8.4-2.74,28.64,28.64,0,0,1,15,2c3.19,1.34,9.6,4,12.52,10.2,1.8,3.84,2.28,9.05,2.4,10.72.06,1,.08,1.77.08,2.65a108.24,108.24,0,0,1-1.71,18.09A76.28,76.28,0,0,1,428.49,253a42.38,42.38,0,0,1-7.12,11.75c-2.74,3.14-4.95,4.6-7.37,5.23a22,22,0,0,1-3.94.42,49,49,0,0,1-8.23,0A39.65,39.65,0,0,1,391,267.8c-1.77-.7-.52-.36-6.86-3.51-3.15-1.56-4.55-2.19-5.83-3.86a15.86,15.86,0,0,1-1.89-3.68,32.57,32.57,0,0,1-1.8-5.4,30.67,30.67,0,0,1-.25-10.12,76.17,76.17,0,0,1,2.05-9.77,122.27,122.27,0,0,1,3.86-13.54,46.21,46.21,0,0,1,3.34-7.72A43.94,43.94,0,0,1,389,202.83Z" />
+                                                        <path id="eyeiris2" class="first-12"
+                                                            d="M431.63,243.32a70.11,70.11,0,0,1-2.46,8,46.76,46.76,0,0,1-3.32,7.1,39.16,39.16,0,0,1-3,4.57,25.6,25.6,0,0,1-2.39,2.8,14.06,14.06,0,0,1-5.42,3.83,16.13,16.13,0,0,1-3.21.64,36.42,36.42,0,0,1-5.25.32c-1.1,0-2.43,0-4.2-.12-1.27-.1-2.3-.25-2.54-.29-2.63-.44-5.52-4.27-7.24-8.46C387,248,391,234.06,391,234.06c3.53-12.08,14.21-29.66,26.52-28.4,7.12.72,11.91,7.46,12.83,8.83,0,0,4.83,7.15,3.39,18.23-.06.45-.36,2.66-.94,5.51C432.65,239,432.26,240.9,431.63,243.32Z" />
+                                                        <ellipse id="eyepupil2" class="first-13" cx="413.53" cy="239.95"
+                                                            rx="22.8" ry="13.85"
+                                                            transform="translate(76.2 578.76) rotate(-75.25)" />
+                                                        <circle id="eyepupillight2" class="first-14" cx="416.87"
+                                                            cy="227.99" r="4.76" />
+                                                    </g>
+                                                    <g id="eye1">
+                                                        <path id="eyemain1" class="first-11"
+                                                            d="M335.66,219.8c-4.22,12.6-19.57,43.47-30.42,41.31S292.55,224,293.92,214.32c.74-5.31,2.16-10.88,2.16-10.88,1.21-4.77,2.45-8.27,2.9-9.52,1.64-4.49,2.75-7.54,5.07-11.22a32.57,32.57,0,0,1,6.07-7.38c2.24-2,4.54-4.06,8.23-5a16.55,16.55,0,0,1,6.88-.17,20.68,20.68,0,0,1,6.66,2.48c5.71,3.59,7.11,11.22,7.88,15.43,1.68,9.1-.23,17-2,24.51C337.72,212.6,336.79,216.42,335.66,219.8Z" />
+                                                        <path id="eyeiris1" class="first-12"
+                                                            d="M339.77,188.09a40.2,40.2,0,0,1,.61,5.58,44.78,44.78,0,0,1-.45,8.23,88.77,88.77,0,0,1-2.5,11.85c-.27,1-.51,1.9-.68,2.49l-29.14-3.19a34.57,34.57,0,0,1,.62-4.86,37.86,37.86,0,0,1,2.19-7.07,40.34,40.34,0,0,1,4.5-8.75,34.39,34.39,0,0,1,5-5.78,14.78,14.78,0,0,1,5-3.47,12.54,12.54,0,0,1,5-.77,11.69,11.69,0,0,1,9.81,5.74Z" />
+                                                        <ellipse id="eyepupil1" class="first-13" cx="325.37" cy="211.32"
+                                                            rx="20.14" ry="11.49"
+                                                            transform="translate(25.37 457.33) rotate(-72.35)" />
+                                                        <circle id="eyepupillight1" class="first-14" cx="328.97"
+                                                            cy="201.46" r="4.11" />
+                                                    </g>
+                                                    <g id="mouth">
+                                                        <path id="mouthmain" class="first-15"
+                                                            d="M374.92,337.06a41.59,41.59,0,0,1-2.23,6.17c-3.93,8.61-9.91,13.67-13.89,17-3.33,2.77-6.43,5.28-11.31,7.2a37.86,37.86,0,0,1-10.8,2.4c-5.08.5-9.2,1-14.06-.68-4.4-1.5-7.19-4-10.28-6.69a47.14,47.14,0,0,1-8.23-9.6,57.91,57.91,0,0,1-6.17-12,52.21,52.21,0,0,1-2.75-8.91A67.75,67.75,0,0,1,294,322c-.11-1.83-.15-3.37-.17-4.45a123.48,123.48,0,0,0,12.69,5.65c3.59,1.37,6.49,2.28,8.05,2.75,4.24,1.27,5.4,1.36,10.12,2.57,8.42,2.15,9,3,16.8,4.8,2.76.65,5.19,1.22,8.57,1.71,2.93.43,5.49.63,10.63,1,2,.16,2.32.17,7.2.52Z" />
+                                                        <path id="mouthteeth" class="first-16"
+                                                            d="M297.43,326.6a16.52,16.52,0,0,0,2.92,2.4c2.13,1.4,3.73,1.74,6.85,2.75,4,1.29,3.24,1.33,7.55,2.74,3,1,5.3,1.59,7.71,2.23,3.14.82,7,1.84,12,2.74,6.08,1.1,6.43.69,12.69,1.89,4.64.89,4.49,1.12,8.22,1.71a94.2,94.2,0,0,0,10.8,1c2.46.09,4.54.08,6.09,0q1.32-3.53,2.66-7.07l-7.9-.58c-11.08-.79-13.39-.87-17.72-1.59-3.6-.6-6.65-1.32-7.81-1.6-2.44-.59-4.21-1.1-7-1.9-5.29-1.54-5.7-1.82-9.27-2.76-2.87-.75-2.74-.6-6-1.45-2-.53-4.59-1.2-7.91-2.29-1-.32-4.13-1.38-8.21-3.07-2.33-1-4.31-1.87-5.85-2.6Z" />
+                                                        <path id="mouthtongue" class="first-17"
+                                                            d="M328.51,338.23a28.24,28.24,0,0,0-5.36,1.23,22.83,22.83,0,0,0-6.35,3.09c-2.1,1.49-4,2.85-5.14,5.31-2.18,4.76.33,9.88,1,11.31a17.48,17.48,0,0,0,3.94,5.15,19.05,19.05,0,0,0,7.72,4.11,27.42,27.42,0,0,0,11.65.69,37.64,37.64,0,0,0,10.29-2.57,39.33,39.33,0,0,0,8.4-4.8,52.07,52.07,0,0,0,8.06-7.38,55.11,55.11,0,0,0,7.2-10.21c-2,0-4.54-.06-7.37-.28-4.28-.33-7.55-.87-8.9-1.11-3.95-.7-3.87-1-7.83-1.67-3.78-.67-4.68-.57-8.73-1.2C335.1,339.59,332.13,339.08,328.51,338.23Z" />
+                                                    </g>
+                                                    <path id="moustache" class="first-10"
+                                                        d="M437.32,275.69c-1.84.91-4.41,2.13-7.55,3.43a61.33,61.33,0,0,1-10.54,3.68c-3.52.81-6.29.91-11.83,1.12-2.41.09-6.28.19-11,0-4.56-.19-8-.57-9.78-.77a64.13,64.13,0,0,1-7.88-1.29c-1.67-.41-3-.83-4-1.15l-107-39.87a17.9,17.9,0,0,1-2.61-3,13.27,13.27,0,0,1-1.87-3.53,16.59,16.59,0,0,1-.58-2.83c-.6-4-.31-4.79-.77-5-1.34-.65-5.36,4.88-7.31,7.92a43.07,43.07,0,0,0-3.25,6,40.34,40.34,0,0,0-2.75,9.26,31.43,31.43,0,0,0-.34,11.32,26.83,26.83,0,0,0,6.52,13,39.66,39.66,0,0,0,.34,8.4,32.31,32.31,0,0,0,3.43,11.15,23.58,23.58,0,0,0,6.68,8.23,15.27,15.27,0,0,0,5.66,2.91,16.41,16.41,0,0,0,6.69.17,18.63,18.63,0,0,0,2.91-.68,21.63,21.63,0,0,0,2.4,7.54,22.73,22.73,0,0,0,6.51,7.37,19.69,19.69,0,0,0,13.38,4.46,28.56,28.56,0,0,0,11.14-2.23,38.54,38.54,0,0,0,3.08,3.08,39.09,39.09,0,0,0,5.83,4.29,33.94,33.94,0,0,0,9.77,4.29,27.39,27.39,0,0,0,9.6.85,28.59,28.59,0,0,0,10.12-3.08,38.9,38.9,0,0,0,9.26-6.17,27.57,27.57,0,0,0,16.28,10.11,21.45,21.45,0,0,0,8.92.34c5-1,8.36-3.82,11.31-6.34a28.18,28.18,0,0,0,5-5.31,27.35,27.35,0,0,0,3.6-7,26.61,26.61,0,0,0,8.4.85,28.12,28.12,0,0,0,9.26-2.22c3-1.22,6-2.42,8.74-5.32a21.72,21.72,0,0,0,3.77-6,30.27,30.27,0,0,0,2.92-9.08,32.55,32.55,0,0,0-.17-9.6A45.76,45.76,0,0,0,437.32,275.69Z" />
+                                                    <path id="nose" class="first-9"
+                                                        d="M378.05,270.5c-3.32,18.53-19.16,27.93-22,29.62-7,4.18-13.8,5.53-18.26,6.43a69.53,69.53,0,0,1-24,.64c-6.57-1.06-31-6.14-43.07-28-2.27-4.11-7.56-14-6-27,2-17.51,14.92-27.76,18.64-30.47,16.87-12.29,36.52-8.7,46.16-6.94,8.42,1.53,23.55,4.29,35.48,17.48C368,235.67,381.6,250.65,378.05,270.5Z" />
+                                                    <g id="logo">
+                                                        <path id="logobackground" class="first-18"
+                                                            d="M344.92,91.75a55.45,55.45,0,0,1-3.77-8.92,38.69,38.69,0,0,1-2.06-8.91,32.36,32.36,0,0,1,1-11.66c1.69-6,4.76-9.84,7.88-13.71A44.58,44.58,0,0,1,358,39c5.91-4.05,11.35-5.44,15.77-6.52a54.34,54.34,0,0,1,20.57-1.37,51.17,51.17,0,0,1,17.48,5.49c8,4.36,12.62,9.9,15.78,13.71a42,42,0,0,1,7.2,11.32,42.9,42.9,0,0,1,2.74,10.62,45.09,45.09,0,0,1,.34,12.35c-.42,3.6-.81,6.91-2.74,10.62s-4.51,6-9.26,10a43.16,43.16,0,0,1-8.57,5.83,39,39,0,0,1-6.17,2.4,89.3,89.3,0,0,0-8.57-3.78c-5.52-2.08-7.56-2.21-13.37-4.45-4.72-1.82-3.79-1.9-7.89-3.43-4.85-1.82-6.17-1.72-14.4-4.12-5-1.45-4.91-1.6-8.91-2.74C352.47,93.28,347.93,92.32,344.92,91.75Z" />
+                                                        <path id="logoM" class="first-4"
+                                                            d="M345,77.3c1-1.73,1.83-3.09,2.45-4,1.28-1.88,2.23-3.4,7.92-9.52,4-4.31,4.57-5.72,8.58-10.62a143.56,143.56,0,0,1,16.28-16.8,91.65,91.65,0,0,0,3.94,10.11,58,58,0,0,1,3.78,9.6c.32,1.15.54,2.1.68,2.74,4.09-2.07,7.37-3.79,9.6-5,3.44-1.82,5.4-2.91,8.57-4.46C409.63,48,412,47,413.49,46.32c.72,4.83,1.31,8.78,1.71,11.48,2.58,17.17,2.52,16.47,2.92,19.55.64,5.06.79,7,1.54,11s1.62,7.41,2.23,9.6a34.73,34.73,0,0,1-3.94,2,42.34,42.34,0,0,1-6.69,2.23c-1.72.47-4,1-6.69,1.55q-.81-6.21-1.37-12.86a269.38,269.38,0,0,1-.85-27.43c-2.74,2-4.91,3.68-6.35,4.8-3.15,2.46-4.44,3.57-7,5.49-2.4,1.77-4.4,3.12-5.65,3.94-.44-1.06-1.11-2.73-1.89-4.8-1.45-3.85-2.11-6-3.94-11.31-.47-1.37-1.18-3.38-2.06-5.83-2.24,3.45-4,6.31-5.14,8.23-3.35,5.56-3.52,6.25-7.2,12.34-1.83,3-2.74,4.44-4.63,7.71-1.41,2.45-2.52,4.48-3.26,5.83-1.62-1.54-2.88-2.92-3.77-3.94a75.52,75.52,0,0,1-4.63-6C346,78.84,345.42,77.93,345,77.3Z" />
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="face" id="backMario">
+                                    <div class="back-mario-card">
+                                        <h5 class="back-mario-body">
+                                            Mario feito em SVG e CSS.<br> <br>
+                                            <a class="a-mario"
+                                                href="https://codepen.io/ed-sa-ma/details/MWmEEJW">https://codepen.io/ed-sa-ma/details/MWmEEJW</a>
+                                        </h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="examples-category bg-mario text-white">Mario</div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="examples-thumb examples-two-column d-flex flex-column flex-lg-row examples-image-hover examples-image-hover-pacman"
+                            data-aos="fade-up">
+                            <div class="examples-top w-100" data-aos="fade-up">
+
+                                <div class="flip" id="cardPacman">
+                                    <div class="face" id="frontPacman">
+                                        <svg id="pacman" viewbox="0 0 190 190">
+                                            <circle cx="50%" cy="50%" r="13%"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="face" id="backPacman">
+                                        <img src="images/code/codePacman.png">
+                                    </div>
+                                </div>
+                                <div class="examples-category bg-pacman text-black">Pacman</div>
+                            </div>
+
+                            <div class="examples-bottom w-100">
+                                <div class="examples-text-info">
+                                    <h5 class="examples-title">
+                                        <a href="examples-detail.html" class="examples-title-link">Pacman feito em SVG e CSS</a>
+                                    </h5>
+
+                                    <div class="d-flex flex-wrap">
+                                        <a class="a-pacman"
+                                            href="https://www.creativelydo.com/blog/using-svg-and-css-to-create-pacman-out-of-pie-charts/">https://www.creativelydo.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="examples-thumb examples-two-column d-flex flex-column flex-lg-row examples-image-hover examples-image-hover-success"
+                            data-aos="fade-up">
+                            <div class="examples-top w-100" data-aos="fade-up">
+
+                                <div class="flip" id="cardHerobrine">
+                                    <div class="face" id="frontHerobrine">
+                                        <svg id="herobrine" viewbox="0 -60 270 300">
+                                            <polyline points="0,0 0,198 272,198 272,0" style="fill:#a26a46;" />
+                                            <polyline points="0,0 0,74 38,74 38,60 234,60 234,74 272,74 272,0"
+                                                style="fill:#160b03;" />
+                                            <polyline points="38,118 106,118 106,94 38,94" style="fill:white;" />
+                                            <polyline points="160,118 234,118 234,94 160,94" style="fill:white;" />
+                                            <polyline points="106,118 106,144 160,144 160,118" style="fill:#5a2d0c;" />
+                                            <polyline points="106,144 106,170 160,170 160,144" style="fill:#8a4d3d;" />
+                                            <polyline
+                                                points="70,144 70,198 200,198 200,144 160,144 160,170 106,170 106,144"
+                                                style="fill:#452110;" />
+                                        </svg>
+                                    </div>
+                                    <div class="face" id="backHerobrine">
+                                        <img src="images/code/codeHerobrine.png">
+                                    </div>
+                                </div>
+
+                                <div class="examples-category bg-herobrine text-white">Herobrine</div>
+                            </div>
+
+                            <div class="examples-bottom w-100">
+                                <div class="examples-text-info">
+                                    <h5 class="examples-title">
+                                        <a href="examples-detail.html"
+                                            class="examples-title-link examples-image-hover examples-image-hover-herobrine">Herobrine
+                                            feito em SVG e CSS</a>
+                                    </h5>
+                                    <a class="a-herobrine"
+                                        href="https://codepen.io/bjpettigrew/pen/dxoEwP">https://codepen.io</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.9012165022154!2d-46.563958211145!3d-23.536055099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f8a77ce69d3%3A0x314a2e471a8b8598!2sFaculdade%20de%20Odontologia%20-%20UNICID!5e0!3m2!1spt-BR!2sbr!4v1682204925347!5m2!1spt-BR!2sbr"
+                class="map-iframe" width="100%" height="400" style="border:0;" allowfullscreen=""
+                loading="lazy"></iframe>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <h5 class="text-white">
+                        <i class="bi-geo-alt-fill me-2"></i>
+                        UNICID Tatuape
+                    </h5>
+
+                    <a href="https://www.unicid.edu.br" class="custom-link mt-2 p-footer">
+                        www.unicid.edu.br
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-5 ms-auto">
+                    <ul class="social-icon">
+                        <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+
+                        <li><a href="#" class="social-icon-link bi-twitter"></a></li>
+
+                        <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+
+                        <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                        <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+            </section>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
