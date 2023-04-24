@@ -28,7 +28,7 @@ https://templatemo.com/tm-567-nomad-force
   --h5-font-size:               24px;
   --h6-font-size:               22px;
   --p-font-size:                20px;
-  --copyright-text-font-size:   14px;
+  --names-text-font-size:       14px;
   --custom-link-font-size:      12px;
 
   --font-weight-light:          300;
@@ -374,6 +374,12 @@ strong {
   overflow: hidden;
 }
 
+@media screen and (min-height: 650px){
+  .inicio {
+    height: 100vh;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .hero {
     height: 100vh;
@@ -424,13 +430,51 @@ strong {
 /*---------------------------------------
   CANVAS & SVG               
 -----------------------------------------*/
-.canvas-image,
-.vector-image {
+.canvas-image{
+  background-color: #f06127;
+  width: 100%;
+  height: 100%;
+  max-height: 635px;
+  min-height: 475px;
+  object-fit: scale-down;
+}
+
+.svg-image{
   width: 100%;
   height: 100%;
   max-height: 635px;
   min-height: 475px;
   object-fit: cover;
+}
+
+.circle-svg{
+  background-color: #212529;
+  object-fit: scale-down;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.code-svg{
+  object-fit: scale-down;
+  padding-top: 2rem;
+  background-color: #212529;
+}
+
+.circle-canvas{
+  background-color: #212529;
+  margin-left: 4.5rem;
+  margin-right: 10rem;
+  object-fit: scale-down;
+  width: 74%;
+}
+
+.code-canvas{
+  background-color: #212529;
+}
+
+.code-canvas2{
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .vector-thumb {
@@ -507,6 +551,8 @@ strong {
 
 .bg-img-svg{
   background-color: #ffb039;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 
 .back-mario-card{
@@ -520,6 +566,19 @@ strong {
   background: linear-gradient(to right, red, rgb(82, 0, 0));
 }
 
+
+.back-circle-card{
+  padding: 5rem;
+  margin-right: 35.7rem;
+  width: 69.8rem;
+  height: 25.67rem;
+  background-color: #212529;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, purple, rgb(59, 0, 59));
+}
+
 .back-mario-body{
   box-shadow: 15px 5px 5px rgba(0, 0, 0, 0.25);
   color: white;
@@ -527,25 +586,141 @@ strong {
   background-color: #212529;
   user-select: none;
 }
+
+.back-circle-body{
+  height: 15rem;
+  margin-left: 16rem;
+  box-shadow: 15px 5px 5px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  background-color: #212529;
+  user-select: none;
+  padding: 1.5rem;
+}
 /*---------------------------------------
-  PORTFOLIO               
+  Diferenças               
 -----------------------------------------*/
-.portfolio-thumb {
-  position: relative;
-  overflow: hidden;
+.card-group{
+  padding-left: 0;
 }
 
-.portfolio-info {
-  margin: 20px;
+.card-svg{
+  max-width: 150%;
+  border-radius: 20px 0px 0px 0px;
 }
+.card-body-svg{
+  
+}
+
+.card-png{
+  border-radius: 0px 20px 0px 0px;;
+}
+
+.card:hover .card-svg{
+  background-color: #b5e61d;
+  transition: .5s;
+}
+.card:hover .card-body-svg{
+  background-color: #b4e61d13;
+  transition: .5s;
+}
+.card:hover .card-canvas{
+  background-color: #5aaddf;
+  transition: .5s;
+}
+.card:hover .card-body-canvas{
+  background-color: #5aacdf13;
+  transition: .5s;
+}
+.card:hover .card-png{
+  background-color: #a066aa;
+  transition: .5s;
+}
+.card:hover .card-body-png{
+  background-color: #a066aa13;
+  transition: .5s;
+}
+
 
 .sticky{
   position: sticky;
   top: 81px;
 }
 
+.p-card-body-1 {
+  padding-top: .3rem;
+  margin: 1rem;
+  padding-bottom: .01rem;
+  text-align: center;
+}
+
+.p-card-body-2{
+  padding-top: .3rem;
+  margin: 1rem;
+  padding-bottom: .01rem;
+  text-align: center;
+}
+
+.p-card-body-3{
+  padding-top: .3rem;
+  margin: 1rem;
+  padding-bottom: 1.85rem;
+  text-align: center;
+}
+.p-card-body-3-mid{
+  padding-top: .1rem;
+  margin: 1rem;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.p-card-body-4{
+  padding-top: .3rem;
+  margin: 1rem;
+  padding-bottom: .4rem;
+  text-align: center;
+}
+
+.p-card-body-4-mid{
+  padding-top: .3rem;
+  margin: 1rem;
+  padding-bottom: .5rem;
+  text-align: center;
+}
+.p-card-body-5{
+  padding-top: .3rem;
+  margin: 1rem;
+  padding-bottom: .4rem;
+  text-align: center;
+}
+
+.p-card-body-6{
+  padding-top: .3rem;
+  margin: 1rem;
+  padding-bottom: 1.8rem;
+  text-align: center;
+}
+.p-card-body-6-right{
+  padding-top: .3rem;
+  margin: 1rem;
+  padding-bottom: 0;
+  text-align: center;
+}
+.p-card-body-7{
+  padding-top: .3rem;
+  margin: 1rem;
+  padding-bottom: .4rem;
+  text-align: center;
+}
+.p-card-body-8{
+  padding-top: .3rem;
+  margin: 1rem;
+  padding-bottom: .4rem;
+  text-align: center;
+}
 /*---------------------------------------
-  examples & EVENTS               
+  examples                
 -----------------------------------------*/
 
 .examples,
@@ -625,6 +800,7 @@ strong {
   user-select: none;
 }
 
+
 .examples-image-hover:hover::after {
   width: 100%;
   left: 0;
@@ -673,17 +849,32 @@ strong {
   transition: all .5s;
 }
 
+#cardCircle{
+  display: flex;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: all .5s;
+}
+
+
+
 .face{
   position: absolute;
+}
+
+.face-circle{
+  display: flex;
+  justify-content: center;
+}
+
+.bg-red{
+  background-color: red;
 }
 
 #frontMario{
   transform: rotateY(180deg);
 }
 
-#backMario{
-  backface-visibility: hidden;
-}
 
 #frontHerobrine{
   transform: rotateY(180deg);
@@ -693,11 +884,24 @@ strong {
   transform: rotateY(180deg);
 }
 
+#frontCircle{
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+#backMario{
+  backface-visibility: hidden;
+}
+
 #backPacman{
   backface-visibility: hidden;
 }
 
 #backHerobrine{
+  backface-visibility: hidden;
+}
+
+#backCircle{
   backface-visibility: hidden;
 }
 
@@ -725,6 +929,11 @@ strong {
   background-color: #a26a46;
 }
 
+.bg-circle{
+  margin-left: 29.3rem;
+  background-color: purple;
+}
+
 .text-black{
   color: #fff;
 }
@@ -732,6 +941,17 @@ strong {
 .a-pacman:hover{
   color: rgb(194, 194, 1);
 }
+
+.a-circle{
+  color: white
+}
+
+
+.a-circle:hover{
+  color: purple
+}
+
+
 .a-mario{
   color: white;
 }
@@ -830,7 +1050,7 @@ strong {
 -----------------------------------------*/
 .section-padding {
   padding-top: 4rem;
-  padding-bottom: 7rem;
+  padding-bottom: 30rem;
 }
 
 /*---------------------------------------
@@ -891,12 +1111,22 @@ strong {
   color: var(--white-color);
 }
 
+.names-text {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: var(--names-text-font-size);
+}
+.bg-black{
+  user-select: none;
+  color: black;
+}
+
+
 /*---------------------------------------
   SOCIAL ICON               
 -----------------------------------------*/
 .social-icon {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .social-icon li {
@@ -918,4 +1148,7 @@ strong {
 .social-icon-link:hover {
   color: var(--primary-color);
 }
+
+
+
 

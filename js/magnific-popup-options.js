@@ -13,6 +13,12 @@ card3.addEventListener("click",(e)=>{
   card3.classList.toggle("flip")
 })
 
+
+const card4 = document.querySelector("#cardCircle")
+card4.addEventListener("click",(e)=>{
+  card4.classList.toggle("flip")
+})
+
 $(document).ready(function() {
   // MagnificPopup
   var magnifPopup = function() {

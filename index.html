@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=2">
+    <meta name="viewport" content="width=device-width, initial-scale=0.3">
     <title>SVG e Canvas</title>
     <link rel="shortcut icon" href="images/logo/unicid-png.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/animation.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -26,14 +27,12 @@
                 </h1>
 
                 <p class="text-secondary-white-color" data-aos="fade-up" data-aos-delay="1000">
-                    as tags html que criam <strong class="custom-underline">SVG</strong> e <strong
-                        class="custom-underline">Canvas</strong>
+                    as tags html que criam <strong class="custom-underline">elementos graficos</strong> e <strong class="custom-underline">vetores</strong>
                 </p>
             </div>
 
             <div class="videoWrapper">
-                <video autoplay="" loop="" muted="" class="custom-video"
-                    poster="videos/792bd98f3e617786c850493560e11c45.jpg">
+                <video autoplay="" loop="" muted="" class="custom-video" poster="videos/792bd98f3e617786c850493560e11c45.jpg">
                     <source src="videos/814dc43e870597176cad645798825c03.mp4" type="video/mp4">
 
                     Your browser does not support the video tag.
@@ -42,6 +41,7 @@
 
             <div class="overlay"></div>
         </section>
+
 
         <nav class="navbar navbar-expand-lg bg-light shadow-lg">
             <div class="container">
@@ -65,7 +65,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Diferenças</a>
+                            <a class="nav-link" href="#diferencas">Diferenças</a>
                         </li>
 
                         <li class="nav-item">
@@ -100,7 +100,7 @@
                     </div>
 
                     <div class="col-lg-6 col-12 mt-lg-3 mb-lg-5">
-                        <p class="me-4" data-aos="fade-up" data-aos-delay="500">O <a
+                        <p class="me-4 animation" data-aos="fade-up" data-aos-delay="500">O <a
                                 href="https://rockcontent.com/br/blog/svg/">SVG</a> é suportado pelos principais
                             navegadores, como o Google Chrome, Mozilla Firefox, Microsoft Edge e Safari. Isso significa
                             que as imagens em <a href="https://rockcontent.com/br/blog/svg/">SVG</a> podem ser exibidas
@@ -113,25 +113,21 @@
                             e dispositivos antes de publicá-las na web.
                     </div>
 
-                    <div class="col-lg-6 col-12 mt-lg-3 mb-lg-5">
-                        <p class="me-4" data-aos="fade-up" data-aos-delay="500">
-                    </div>
-
                 </div>
             </div>
 
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-3 col-12 p-0">
-                        <img src="images/vector/svg.jpg" class="img-fluid canvas-image">
+                        <img src="images/vector/svg.jpg" class="img-fluid svg-image">
                     </div>
 
                     <div class="col-lg-3 col-12 bg-dark">
                         <div
                             class="d-flex flex-column flex-wrap justify-content-center h-100 py-5 px-4 pt-lg-4 pb-lg-0">
-                            <h3 class="text-white mb-3" data-aos="fade-up">SVG</h3>
+                            <h3 class="text-white mb-3" data-aos="fade-up" data-aos-delay="1000">SVG</h3>
 
-                            <p class="text-secondary-white-color" data-aos="fade-up">Figura para demonstração de codigo
+                            <p class="text-secondary-white-color" data-aos="fade-up " data-aos-delay="1000">Figura para demonstração de codigo
                                 SVG</p>
 
                             <div class="mt-3 custom-links button">
@@ -151,9 +147,9 @@
                             data-bs-interval="0">
                             <div class="carousel-inner">
                                 <div class="carousel-item active background">
-                                    <a href="images/figures/circleSvg.png" class="image-popup" data-aos="zoom-in"
+                                    <a href="images/figures/circleSvg.png" class="image-popup" >
+                                        <img src="images/figures/circleSvg.png" class="img-fluid canvas-image circle-svg" data-aos="zoom-in"
                                         data-aos-delay="1000">
-                                        <img src="images/figures/circleSvg.png" class="img-fluid vector-image">
                                     </a>
                                     <div class="vector-thumb bg-img-svg">
                                         <h3 class="text-white mb-0 p-svg">Imagem</h3>
@@ -167,7 +163,7 @@
 
                                 <div class="carousel-item">
                                     <a href="images/code/codeSvg.png" class="image-popup" data-aos="zoom-in">
-                                        <img src="images/code/codeSvg.png" class="img-fluid vector-image">
+                                        <img src="images/code/codeSvg.png" class="img-fluid canvas-image code-svg">
                                     </a>
 
                                     <div class="vector-thumb bg-img-svg">
@@ -188,7 +184,7 @@
         </section>
 
         <section class="section-padding pb-0" id="canvas">
-            <div class="container mb-5 pb-lg-5">
+            <div class="container mb-4 pb-lg-5">
                 <div class="row">
                     <div class="col-12">
                         <h2 class="mb-3" data-aos="fade-up">Canvas</h2>
@@ -273,7 +269,7 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active background">
                                     <a href="images/figures/circleCanvas.png" class="image-popup" data-aos="zoom-in">
-                                        <img src="images/figures/circleCanvas.png" class="img-fluid vector-image" alt="">
+                                        <img src="images/figures/circleCanvas.png" class="img-fluid canvas-image circle-canvas" >
                                     </a>
                                     <div class="vector-thumb bg-img-canva">
                                         <h3 class="text-white mb-0">Imagem</h3>
@@ -287,7 +283,7 @@
 
                                 <div class="carousel-item">
                                     <a href="images/code/codehtmlcanvas.png" class="image-popup">
-                                        <img src="images/code/codehtmlcanvas.png" class="img-fluid vector-image" alt="">
+                                        <img src="images/code/codehtmlcanvas.png" class="img-fluid canvas-image code-canvas code-canvas2" alt="">
                                     </a>
 
                                     <div class="vector-thumb bg-img-canva">
@@ -301,7 +297,7 @@
                                 </div>
                                 <div class="carousel-item ">
                                     <a href="images/code/codejscanvas.png" class="image-popup">
-                                        <img src="images/code/codejscanvas.png" class="img-fluid vector-image" alt="">
+                                        <img src="images/code/codejscanvas.png" class="img-fluid canvas-image code-canvas" alt="">
                                     </a>
 
                                     <div class="vector-thumb bg-img-canva">
@@ -321,7 +317,7 @@
             </div>
         </section>
 
-        <section class="section-padding" id="portfolio">
+        <section class="section-padding" id="diferencas">
             <div class="container">
                 <div class="row">
 
@@ -330,119 +326,104 @@
                     </div>
 
 
-                    <table class="card">
-                        <tr class="card-body sticky">
-                            <th>
-                                <h5 class="card-title card-title-svg">SVG</h5>
-                            </th>
-                            <th>
-                                <h5 class="card-title card-title-canvas">CANVAS</h5>
-                            </th>
-                            <th>
-                                <h5 class="card-title card-title-png">PNG</h5>
-                            </th>
-                        </tr>
-                        <tr class="card-body" data-aos="fade-up">
-                            <th><img class="card-img-top card-svg" src="images/portfolio/svg.png"></th>
-                            <th><img class="card-img-top card-canvas" src="images/portfolio/np4mse8xxr1ta3jhdpdu.png"
-                                    class="card-img-top"></th>
-                            <th><img class="card-img-top card-png" src="images/portfolio/np4mse8xxr1ta3jhdpdu.png"
-                                    class="card-img-top"></th>
-                        </tr>
-                        <tr class="card-body" data-aos="fade-up">
-                            <td>
-                                <p class="card-text card-svg">Imagem Vetorial</p>
-                            </td>
-                            <td>
-                                <p class="card-text card-canvas">Vetorial ou Rasterizada</p>
-                            </td>
-                            <td>
-                                <p class="card-text card-png">Imagem Vetorial</p>
-                            </td>
-                        </tr>
-                        <tr class="card-body" data-aos="fade-up">
-                            <td>
-                                <p class="card-text card-svg">Escalabilidade Total, sem perda de qualidade</p>
-                            </td>
-                            <td>
-                                <p class="card-text card-canvas">Limitada pela resolução do dispositivo </p>
-                            </td>
-                            <td>
-                                <p class="card-text card-png">Escalabilidade Total, sem perda de qualidade</p>
-                            </td>
-                        </tr>
-                        <tr class="card-body" data-aos="fade-up">
-                            <td>
-                                <p class="card-text card-svg">Pouca ou nenhuma Interatividade</p>
-                            </td>
-                            <td>
-                                <p class="card-text card-canvas">Total, através de scripts JavaScript</p>
-                            </td>
-                            <td>
-                                <p class="card-text card-png">Total, através de scripts JavaScript</p>
-                            </td>
-                        </tr>
-                        <tr class="card-body" data-aos="fade-up">
+                    <div class="card-group">
+                        <div class="card">
+                            <h5 class="card-title sticky card-svg">SVG</h5>
+                            <img src="images/differences/svg.png" class="card-img-top" alt="...">
+                            <div class="card-body card-body-svg" data-aos="fade-up">
+                                <div class="p-card-body-1" data-aos="zoom-in" data-aos-delay="200">
+                                    <p class="card-text">Formato vetorial</p>
+                                </div>
+                                <div class="p-card-body-2" data-aos="zoom-in" data-aos-delay="200">
+                                    <p class="card-text">Resolução escalavel</p>
+                                </div>
+                                <div class="p-card-body-3" data-aos="zoom-in" data-aos-delay="200">
+                                    <p class="card-text">Qualidade alta</p>
+                                </div>
+                                <div class="p-card-body-4" data-aos="zoom-in" data-aos-delay="200">
+                                    <p class="card-text">Tamanho do arquivo grande</p>
+                                </div>
+                                <div class="p-card-body-5" data-aos="zoom-in" data-aos-delay="200">
+                                    <p class="card-text">Edição e animação facil</p>
+                                </div>
+                                <div class="p-card-body-6" data-aos="zoom-in" data-aos-delay="200">
+                                    <p class="card-text">Interatividade suportada</p>
+                                </div>
+                                <div class="p-card-body-7" data-aos="zoom-in" data-aos-delay="200">
+                                    <p class="card-text">Renderizado no lado do cliente</p>
+                                </div>
+                                <div class="p-card-body-8" data-aos="zoom-in" data-aos-delay="200">
+                                    <p class="card-text">Suportado na maioria dos navegadores modernos</p>
+                                </div>
 
-                            <td>
-                                <p class="card-text card-svg">Sim</p>
-                            </td>
-                            <td>
-                                <p class="card-text card-canvas">Total, através de scripts JavaScript</p>
-                            </td>
-                            <td>
-                                <p class="card-text card-png">Pouca ou nenhuma Interatividade</p>
-                            </td>
 
-                        </tr>
-                        <tr class="card-body" data-aos="fade-up">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h5 class="card-title sticky card-canvas">CANVAS</h5>
+                            <img src="images/differences/canvas.png" class="card-img-top" alt="...">
+                            <div class="card-body card-body-canvas" data-aos="fade-up">
 
-                            <td>
-                                <p class="card-text card-svg">Muito bom, pode ser lido em formato de texto</p>
-                            </td>
-                            <td>
-                                <p class="card-text card-canvas">Bom, mas pode ser mais difícil para dispositivos de
-                                    leitura de tela</p>
-                            </td>
-                            <td>
-                                <p class="card-text card-png">Sim</p>
-                            </td>
+                                <div class="p-card-body-1">
+                                    <p class="card-text" data-aos="zoom-in" data-aos-delay="200">Formato rasterizado</p>
+                                </div>
+                                <div class="p-card-body-2">
+                                    <p class="card-text" data-aos="zoom-in" data-aos-delay="200">Resolução definida</p>
+                                </div>
+                                <div class="p-card-body-3-mid">
+                                    <p class="card-text" data-aos="zoom-in" data-aos-delay="200">Qualidade depende da resolução</p>
+                                </div>
+                                <div class="p-card-body-4-mid">
+                                    <p class="card-text" data-aos="zoom-in" data-aos-delay="200">Tamanho do arquivo variavel</p>
+                                </div>
+                                <div class="p-card-body-5">
+                                    <p class="card-text" data-aos="zoom-in" data-aos-delay="200">Edição e animação dificil</p>
+                                </div>
+                                <div class="p-card-body-6">
+                                    <p class="card-text" data-aos="zoom-in" data-aos-delay="200">Interatividade suportada</p>
+                                </div>
+                                <div class="p-card-body-7">
+                                    <p class="card-text" data-aos="zoom-in" data-aos-delay="200">Renderizado no lado do cliente</p>
+                                </div>
+                                <div class="p-card-body-8">
+                                    <p class="card-text"data-aos="zoom-in" data-aos-delay="200">Suportado na maioria dos navegadores modernos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h5 class="card-title sticky card-png">PNG</h5>
+                            <img src="images/differences/png.png" class="card-img-top" alt="...">
+                            <div class="card-body card-body-png" data-aos="fade-up">
 
-                        </tr>
-                        <tr class="card-body" data-aos="fade-up">
-                            <td>
-                                <p class="card-text card-svg">Suportado em todos os navegadores modernos </p>
-                            </td>
-                            <td>
-                                <p class="card-text card-canvas">Suportado em todos os navegadores modernos </p>
-                            </td>
-                            <td>
-                                <p class="card-text card-png">Suportado em todos os navegadores modernos </p>
-                            </td>
-                        </tr>
-                        <tr class="card-body" data-aos="fade-up">
-                            <td>
-                                <p class="card-text card-svg">Pequeno, por ser baseado em XML</p>
-                            </td>
-                            <td>
-                                <p class="card-text card-canvas">Variável, dependendo da complexidade da imagem</p>
-                            </td>
-                            <td>
-                                <p class="card-text card-png">Pequeno, por ser baseado em XML</p>
-                            </td>
-                        </tr>
-                        <tr class="card-body" data-aos="fade-up">
-                            <td>
-                                <p class="card-text-last card-svg">Ícones, logotipos e gráficos estáticos </p>
-                            </td>
-                            <td>
-                                <p class="card-text-last card-canvas">Gráficos dinâmicos e interativos</p>
-                            </td>
-                            <td>
-                                <p class="card-text-last card-png">Ícones, logotipos e gráficos estáticos </p>
-                            </td>
-                        </tr>
-                    </table>
+                                <div class="p-card-body-1" data-aos="zoom-in" data-aos-delay="200">
+                                    <p class="card-text">Formato rasterizado</p>
+                                </div>
+                                <div class="p-card-body-2" data-aos="zoom-in" data-aos-delay="200">
+                                    <p class="card-text">Resolução definida</p>
+                                </div>
+                                <div class="p-card-body-3" data-aos="zoom-in" data-aos-delay="200">
+                                    <p class="card-text">Qualidade alta</p>
+                                </div>
+                                <div class="p-card-body-4" data-aos="zoom-in" data-aos-delay="200">
+                                    <p class="card-text">Tamanho do arquivo pequeno</p>
+                                </div>
+                                <div class="p-card-body-5" data-aos="zoom-in" data-aos-delay="200">
+                                    <p class="card-text">Edição e animação dificil</p>
+                                </div>
+                                <div class="p-card-body-6-right" data-aos="zoom-in" data-aos-delay="200">
+                                    <p class="card-text">Interatividade não suportada</p>
+                                </div>
+                                <div class="p-card-body-7" data-aos="zoom-in" data-aos-delay="200">
+                                    <p class="card-text">Renderizado no lado do servidor</p>
+                                </div>
+                                <div class="p-card-body-8" data-aos="zoom-in" data-aos-delay="200">
+                                    <p class="card-text">Suportado na maioria dos navegadores modernos</p>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
 
 
                 </div>
@@ -664,6 +645,34 @@
                         </div>
                     </div>
 
+                    <div class="col-lg-6 col-12">
+
+                    </div>
+
+                    <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+
+                        <div class="examples-thumb">
+
+                            <div class="flip" id="cardCircle">
+                                <div class="face face-circle" id="frontCircle">
+                                    <canvas id="animationCanvas" style="width: 69.9rem; height: 25.5rem;margin-right: 35.7rem; background-color: #212529;"></canvas>
+                                    <script src="js/circle-canva-animation.js"></script> 
+                                </div>
+                                <div class="face face-circle" id="backCircle">
+                                    <div class="back-circle-card">
+                                        <h5 class="back-circle-body">
+                                            Circulo feito em Canvas e JS.<br> <br>
+                                            <a class="a-circle"
+                                                href="https://www.manualdocodigo.com.br/tutorial-canvas-parte2/">www.manualdocodigo.com.br</a>
+                                        </h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="examples-category bg-circle text-white">Circulo</div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -691,21 +700,22 @@
                         www.unicid.edu.br
                     </a>
                 </div>
+                <div class="col-6">
+                    <p class="names-text mb-0">Alunos: Pablo Cauê Rafael Silva <br>
+                     <p class="names-text"> <span class="bg-black">Alunos:</span> Gustavo Oliveira Tolentino Roque</p>
+                </div>
 
                 <div class="col-lg-3 col-5 ms-auto">
                     <ul class="social-icon">
-                        <li><a href="#" class="social-icon-link bi-facebook"></a></li>
-
                         <li><a href="#" class="social-icon-link bi-twitter"></a></li>
 
                         <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
 
-                        <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+                        <li><a href="https://www.instagram.com/pablo_caue1/" target="_blank" class="social-icon-link bi-instagram"></a></li>
 
-                        <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCFlrHbsy1WYN6jGvt7mdkBQ" target="_blank" class="social-icon-link bi-youtube"></a></li>
                     </ul>
                 </div>
-
             </div>
             </section>
     </footer>
