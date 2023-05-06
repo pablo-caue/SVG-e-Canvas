@@ -773,6 +773,7 @@ strong {
 
 .face {
   position: absolute;
+  cursor: pointer;
 }
 
 .flip {
