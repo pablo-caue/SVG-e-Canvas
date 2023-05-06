@@ -11,3 +11,5 @@ var heart = document.getElementById('#heart');
       ctx.bezierCurveTo(130,62.5,130,25,100,25);
       ctx.bezierCurveTo(85,25,75,37,75,40);
       ctx.fill();
+
+

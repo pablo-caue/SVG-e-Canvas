@@ -13,10 +13,19 @@ card3.addEventListener("click",(e)=>{
   card3.classList.toggle("flip")
 })
 
-
-const card4 = document.querySelector("#cardCircle")
+const card4 = document.querySelector("#cardAndroid")
 card4.addEventListener("click",(e)=>{
   card4.classList.toggle("flip")
+})
+
+const card5 = document.querySelector("#cardYoutube")
+card5.addEventListener("click",(e)=>{
+  card5.classList.toggle("flip")
+})
+
+const card6 = document.querySelector("#cardPeople")
+card6.addEventListener("click",(e)=>{
+  card6.classList.toggle("flip")
 })
 
 $(document).ready(function() {
