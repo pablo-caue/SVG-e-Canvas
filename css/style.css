@@ -3,7 +3,7 @@
 -----------------------------------------*/
 :root {
   --white-color: #FFFFFF;
-  --primary-color: #009b83;
+  --primary-color: #4749b8;
   --section-bg-color: #f9f9f9;
   --dark-color: #000000;
   --grey-color: #fcfeff;
@@ -31,7 +31,7 @@
 
 body,
 html {
-  height: 100%;
+  height: 50vh;
   width: 100%;
 }
 
@@ -64,7 +64,7 @@ h6 {
 }
 
 h1,
-h2 {
+h2 h3 {
   font-weight: var(--font-weight-black);
 }
 
@@ -289,16 +289,17 @@ strong {
 
 ::-webkit-scrollbar-track {
   background-color: #f8f9fa;
-  min-height: 50px; /* Define a altura mínima da área da barra de rolagem */
+  min-height: 50px;
+  /* Define a altura mínima da área da barra de rolagem */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(167,167,167,255);
+  background-color: rgba(167, 167, 167, 255);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(33,37,41,255);
+  background-color: rgba(33, 37, 41, 255);
 }
 
 .card-scroll::-webkit-scrollbar {
@@ -382,6 +383,486 @@ strong {
   cursor: default;
 }
 
+
+.code-example {
+  padding-left: 1rem;
+  background-color: white;
+  border-left: 5px solid var(--primary-color);
+}
+
+.code-brown {
+  color: brown;
+}
+
+.code-red {
+  color: red;
+}
+
+.code-blue {
+  color: mediumblue;
+}
+
+.code-black {
+  color: black;
+}
+
+
+.hidden-svg {
+  height: 3rem;
+}
+
+.hidden-canvas {
+  position: absolute;
+  width: 40rem;
+}
+
+
+code {
+  padding: 2px;
+  background-color: rgb(245, 245, 245);
+}
+
+
+.hidden-body-svg {
+  display: none;
+}
+
+.cut-text-1 code {
+  color: #d633846e
+}
+
+.cut-text-2 code {
+  color: #d633846e
+}
+
+.cut-text-1 {
+  top: 86.35rem;
+  width: 33rem;
+  position: absolute;
+  height: 100px;
+  overflow: hidden;
+  color: #71727563;
+}
+
+.cut-text-2 {
+  left: 41.03rem;
+  top: 86.35rem;
+  width: 33rem;
+  position: absolute;
+  height: 100px;
+  overflow: hidden;
+  color: #7172753d;
+}
+
+.hidden-text-1 {
+  position: absolute;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-text-2 {
+  top: 86.4rem;
+  left: 41rem;
+  position: absolute;
+  overflow: hidden;
+  height: 400px;
+  width: 35rem;
+}
+
+.hidden-body-1 {
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  top: 96rem;
+  position: absolute;
+  overflow: hidden;
+  height: 290px;
+  width: 32rem;
+
+}
+
+.hidden-body-2 {
+  left: 41rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  top: 96rem;
+  position: absolute;
+  overflow: hidden;
+  height: 290px;
+  width: 32rem;
+}
+
+
+.hidden-text-3 {
+  top: 118rem;
+  position: absolute;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-text-4 {
+  left: 41rem;
+  top: 118rem;
+  position: absolute;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-body-3 {
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  top: 131rem;
+  position: absolute;
+  overflow: hidden;
+  height: 290px;
+  width: 32rem;
+
+}
+
+.hidden-body-4 {
+  padding: 1rem;
+  background-color: #f5f5f5;
+  top: 131rem;
+  left: 41rem;
+  position: absolute;
+  overflow: hidden;
+  height: 290px;
+  width: 32rem;
+}
+
+.hidden-text-5 {
+  top: 153rem;
+  position: absolute;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-text-6 {
+  left: 41rem;
+  top: 153rem;
+  position: absolute;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-body-5 {
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  top: 165rem;
+  position: absolute;
+  overflow: hidden;
+  height: 290px;
+  width: 32rem;
+
+}
+
+.hidden-body-6 {
+  left: 41rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  top: 165rem;
+  position: absolute;
+  overflow: hidden;
+  height: 290px;
+  width: 32rem;
+}
+
+.hidden-text-7 {
+  position: absolute;
+  top: 174rem;
+  margin-top: 20rem;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-text-8 {
+  left: 41rem;
+  position: absolute;
+  top: 174rem;
+  margin-top: 20rem;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-text-9 {
+  position: absolute;
+  top: 185rem;
+  margin-top: 20rem;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-text-10 {
+  left: 41rem;
+  position: absolute;
+  top: 185rem;
+  margin-top: 20rem;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-text-11 {
+  position: absolute;
+  top: 196rem;
+  margin-top: 20rem;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-text-12 {
+  left: 41rem;
+  position: absolute;
+  top: 196rem;
+  margin-top: 20rem;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-title-1 {
+  position: absolute;
+  top: 81rem;
+  width: 50rem;
+}
+
+
+.hidden-title-2 {
+  position: absolute;
+  top: 188rem;
+  width: 50rem;
+}
+
+.hidden-body-canvas {
+  display: none;
+}
+
+.cut-text-1-canvas {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  width: 33rem;
+  height: 110px;
+  overflow: hidden;
+  color: #71727563;
+}
+
+.cut-text-2-canvas {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  left: 41.03rem;
+  width: 33rem;
+  height: 110px;
+  overflow: hidden;
+  color: #7172753d;
+}
+
+.section-hidden-canvas {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.hidden-text-1-canvas {
+  position: absolute;
+  overflow: hidden;
+  top: 44rem;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-text-2-canvas {
+  left: 37.1rem;
+  position: absolute;
+  overflow: hidden;
+  top: 44rem;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-body-1-canvas {
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  top: 53rem;
+  position: absolute;
+  overflow: hidden;
+  height: 290px;
+  width: 32rem;
+
+}
+
+.hidden-body-2-canvas {
+  left: 37rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  top: 53rem;
+  position: absolute;
+  overflow: hidden;
+  height: 290px;
+  width: 32rem;
+}
+
+
+.hidden-text-3-canvas {
+  top: 75rem;
+  position: absolute;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-text-4-canvas {
+  left: 36.5rem;
+  top: 75rem;
+  position: absolute;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-body-3-canvas {
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  top: 82rem;
+  position: absolute;
+  overflow: hidden;
+  height: 290px;
+  width: 32rem;
+
+}
+
+.hidden-body-4-canvas {
+  padding: 1rem;
+  background-color: #f5f5f5;
+  top: 82rem;
+  left: 36.5rem;
+  position: absolute;
+  overflow: hidden;
+  height: 290px;
+  width: 32rem;
+}
+
+.hidden-text-5-canvas {
+  top: 103.5rem;
+  position: absolute;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-text-6-canvas {
+  left: 36.5rem;
+  top: 103.5rem;
+  position: absolute;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-body-5-canvas {
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  top: 110rem;
+  position: absolute;
+  overflow: hidden;
+  height: 290px;
+  width: 32rem;
+
+}
+
+.hidden-body-6-canvas {
+  left: 36.5rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  top: 110rem;
+  position: absolute;
+  overflow: hidden;
+  height: 290px;
+  width: 32rem;
+}
+
+.hidden-text-7-canvas {
+  position: absolute;
+  top: 115rem;
+  margin-top: 20rem;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-text-8-canvas {
+  left: 36.5rem;
+  position: absolute;
+  top: 115rem;
+  margin-top: 20rem;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-text-9-canvas {
+  position: absolute;
+  top: 124rem;
+  margin-top: 20rem;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-text-10-canvas {
+  left: 36.5rem;
+  position: absolute;
+  top: 124rem;
+  margin-top: 20rem;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-text-11-canvas {
+  position: absolute;
+  top: 134rem;
+  margin-top: 20rem;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-text-12-canvas {
+  left: 36.5rem;
+  position: absolute;
+  top: 134rem;
+  margin-top: 20rem;
+  overflow: hidden;
+  height: 400px;
+  width: 33rem;
+}
+
+.hidden-title-1-canvas {
+  position: absolute;
+  top: 38rem;
+  width: 50rem;
+}
+
+
+.hidden-title-2-canvas {
+  position: absolute;
+  top: 130rem;
+  width: 50rem;
+}
+
 /*---------------------------------------
   CANVAS & SVG               
 -----------------------------------------*/
@@ -391,7 +872,15 @@ strong {
   height: 100%;
   max-height: 635px;
   min-height: 475px;
-  object-fit: cover;
+  object-fit: scale-down;
+}
+
+.canvas-logo {
+  background-color: #f0602700;
+  width: 100%;
+  height: 100%;
+  max-height: 635px;
+  min-height: 475px;
 }
 
 .svg-image {
@@ -423,93 +912,71 @@ strong {
 }
 
 .bt-svg {
-  width: 130px;
+  position: relative;
+  margin-right: 25rem;
+  margin-left: 29rem;
+  width: 200px;
   height: 40px;
   line-height: 42px;
   padding: 0;
   border: none;
-  background: rgba(254, 173, 56, 255);
-  background: linear-gradient(0deg, rgba(254, 173, 56, 255) 0%, rgba(253, 121, 35, 255) 100%);
+  background: #fd7b2452;
+  transition: .5s;
 }
 
 .bt-svg:hover {
-  color: #ffae38;
-  background: transparent;
+  color: white;
+  background: linear-gradient(to bottom, #f7d002, #f59100);
   box-shadow: none;
-}
-
-.bt-svg:before,
-.bt-svg:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 2px;
-  width: 0;
-  background: #ffae38;
-  box-shadow:
-    -1px -1px 5px 0px #fff,
-    7px 7px 20px 0px #0003,
-    4px 4px 5px 0px #0002;
-  transition: 400ms ease all;
-}
-
-.bt-svg:after {
-  right: inherit;
-  top: inherit;
-  left: 0;
-  bottom: 0;
-}
-
-.bt-svg:hover:before,
-.bt-svg:hover:after {
-  width: 100%;
-  transition: 800ms ease all;
+  opacity: 1;
+  transition: .5s;
 }
 
 .bt-canvas {
-  width: 130px;
+  position: absolute;
+  top: 178rem;
+  margin-right: 25rem;
+  margin-left: 29rem;
+  width: 200px;
   height: 40px;
   line-height: 42px;
   padding: 0;
   border: none;
-  background: rgba(238, 95, 37, 255);
-  background: linear-gradient(0deg, rgba(241, 101, 40, 255) 0%, rgba(238, 95, 37, 255) 100%);
+  background: #ef622646;
+  transition: .5s;
 }
 
 .bt-canvas:hover {
-  color: #ee5f25;
-  background: transparent;
+  color: white;
+  background: linear-gradient(to bottom, #ef6326, #b84b1d);
   box-shadow: none;
+  opacity: 1;
+  transition: .5s;
 }
 
-.bt-canvas:before,
-.bt-canvas:after {
-  content: '';
+
+.copy {
+  cursor: pointer;
   position: absolute;
-  top: 0;
-  right: 0;
-  height: 2px;
-  width: 0;
-  background: #ee5f25;
-  box-shadow:
-    -1px -1px 5px 0px #fff,
-    7px 7px 20px 0px #0003,
-    4px 4px 5px 0px #0002;
-  transition: 400ms ease all;
+  top: 10px;
+  left: 35.63rem;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-right: 15px;
 }
 
-.bt-canvas:after {
-  right: inherit;
-  top: inherit;
-  left: 0;
-  bottom: 0;
-}
-
-.bt-canvas:hover:before,
-.bt-canvas:hover:after {
-  width: 100%;
-  transition: 800ms ease all;
+.copy:hover {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-right: 15px;
 }
 
 .circle-svg {
@@ -526,7 +993,7 @@ strong {
 }
 
 .circle-canvas {
-  background-color: #212529;
+  background-color: rgb(33, 37, 41);
   margin-left: 4.5rem;
   margin-right: 10rem;
   object-fit: scale-down;
@@ -540,6 +1007,7 @@ strong {
 .code-canvas2 {
   padding-left: 3rem;
   padding-right: 3rem;
+  height: 400px;
 }
 
 .vector-thumb {
@@ -575,7 +1043,7 @@ strong {
 }
 
 .card-scroll {
-  height: 500px;
+  height: 400px;
   overflow-y: auto;
 }
 
@@ -583,6 +1051,19 @@ strong {
   border-radius: 0px 20px 0px 0px;
   ;
 }
+
+.card-svg {
+  z-index: 5;
+}
+
+.card-canvas {
+  z-index: 5;
+}
+
+.card-png {
+  z-index: 5;
+}
+
 
 .card:hover .card-svg {
   background-color: #b5e61d;
@@ -1219,6 +1700,12 @@ strong {
   padding-bottom: 4rem;
 }
 
+.section-padding-canvas {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+
 /*---------------------------------------
   FOOTER               
 -----------------------------------------*/
@@ -1269,3 +1756,4 @@ strong {
   margin-left: 50rem;
   width: 25rem;
 }
+
