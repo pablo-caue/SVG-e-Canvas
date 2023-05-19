@@ -436,7 +436,7 @@ code {
 }
 
 .cut-text-1 {
-  top: 86.35rem;
+  top: 85.35rem;
   width: 33rem;
   position: absolute;
   height: 100px;
@@ -446,7 +446,7 @@ code {
 
 .cut-text-2 {
   left: 41.03rem;
-  top: 86.35rem;
+  top: 85.35rem;
   width: 33rem;
   position: absolute;
   height: 100px;
@@ -455,6 +455,7 @@ code {
 }
 
 .hidden-text-1 {
+  top: 85.35rem;
   position: absolute;
   overflow: hidden;
   height: 400px;
@@ -462,7 +463,7 @@ code {
 }
 
 .hidden-text-2 {
-  top: 86.4rem;
+  top: 85.35rem;
   left: 41rem;
   position: absolute;
   overflow: hidden;
@@ -1756,4 +1757,3 @@ code {
   margin-left: 50rem;
   width: 25rem;
 }
-
